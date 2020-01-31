@@ -45,3 +45,27 @@ Enum raw values
 SCORE: 6/6
 Complex types: Summary
 SCORE: 4/6
+
+## Day3
+
+
+Operators and conditions
+Arithmetic operators
+SCORE: 6/6
+Operator overloading
+SCORE: 11/12
+Compound assignment operators
+SCORE: 6/6
+Comparison operators
+SCORE: 6/6
+Conditions
+SCORE: 10/12
+Combining conditions
+SCORE: 11/12
+The ternary operator
+SCORE: 11/12
+Switch statements
+SCORE: 6/6
+Range operators
+Operators and conditions: Summary
+SCORE: 9/12
