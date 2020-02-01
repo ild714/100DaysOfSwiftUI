@@ -69,3 +69,24 @@ SCORE: 6/6
 Range operators
 Operators and conditions: Summary
 SCORE: 9/12
+
+## Day4
+
+
+Looping
+For loops
+SCORE: 11/12
+While loops
+SCORE: 7/12
+Repeat loops
+SCORE: 9/12
+Exiting loops
+SCORE: 10/12
+Exiting multiple loops
+SCORE: 6/6
+Skipping items
+SCORE: 10/12
+Infinite loops
+SCORE: 11/12
+Looping: Summary
+SCORE: 10/12
