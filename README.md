@@ -118,3 +118,17 @@ SCORE: 6/6
 Functions: Summary
 SCORE: 11/12
 
+## Day6
+
+
+Closures
+Creating basic closures
+SCORE: 9/12
+Accepting parameters in a closure
+SCORE: 11/12
+Returning values from a closure
+SCORE: 9/12
+Closures as parameters
+SCORE: 9/12
+Trailing closure syntax
+SCORE: 10/12
