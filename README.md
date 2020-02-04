@@ -132,3 +132,21 @@ Closures as parameters
 SCORE: 9/12
 Trailing closure syntax
 SCORE: 10/12
+
+## Day7 
+
+Using closures as parameters when they accept parameters
+SCORE: 9/12
+Using closures as parameters when they return values
+SCORE: 8/12
+Shorthand parameter names
+SCORE: 6/6
+Closures with multiple parameters
+SCORE: 9/12
+Returning closures from functions
+SCORE: 11/12
+Capturing values
+SCORE: 8/12
+Closures: Summary
+SCORE: 5/6
+
