@@ -150,3 +150,14 @@ SCORE: 8/12
 Closures: Summary
 SCORE: 5/6
 
+## Day8
+
+
+Structs
+Creating your own structs
+Computed properties
+Property observers
+Methods
+Mutating methods
+Properties and methods of strings
+Properties and methods of arrays
