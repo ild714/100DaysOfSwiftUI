@@ -167,3 +167,18 @@ Properties and methods of strings
 SCORE: 5/6
 Properties and methods of arrays
 SCORE: 9/12
+
+## Day9
+
+Initializers
+SCORE: 9/12
+Referring to the current instance
+SCORE: 8/12
+Lazy properties
+SCORE: 6/6
+Static properties and methods
+SCORE: 9/12
+Access control
+SCORE: 7/12
+Structs: Summary
+SCORE: 5/6
