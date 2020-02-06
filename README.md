@@ -152,12 +152,18 @@ SCORE: 5/6
 
 ## Day8
 
-
 Structs
 Creating your own structs
+SCORE: 9/12
 Computed properties
+SCORE: 8/12
 Property observers
+SCORE: 8/12
 Methods
+SCORE: 9/12
 Mutating methods
+SCORE: 8/12
 Properties and methods of strings
+SCORE: 5/6
 Properties and methods of arrays
+SCORE: 9/12
