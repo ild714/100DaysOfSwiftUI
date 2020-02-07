@@ -182,3 +182,24 @@ Access control
 SCORE: 7/12
 Structs: Summary
 SCORE: 5/6
+
+## Day10
+
+
+Classes
+Creating your own classes
+SCORE: 9/12
+Class inheritance
+SCORE: 9/12
+Overriding methods
+SCORE: 6/12
+Final classes
+SCORE: 12/12
+Copying objects
+SCORE: 10/12
+Deinitializers
+SCORE: 10/12
+Mutability
+SCORE: 9/12
+Classes: Summary
+SCORE: 5/6
