@@ -203,3 +203,19 @@ Mutability
 SCORE: 9/12
 Classes: Summary
 SCORE: 5/6
+
+## Day11
+
+
+Protocols
+SCORE: 12/12
+Protocol inheritance
+SCORE: 9/12
+Extensions
+SCORE: 7/12
+Protocol extensions
+SCORE: 10/12
+Protocol-oriented programming
+SCORE: 6/6
+Protocols and extensions: Summary
+SCORE: 8/12
