@@ -219,3 +219,30 @@ Protocol-oriented programming
 SCORE: 6/6
 Protocols and extensions: Summary
 SCORE: 8/12
+
+## Day12
+
+
+Optionals
+Handling missing data
+SCORE: 6/6
+Unwrapping optionals
+SCORE: 11/12
+Unwrapping with guard
+SCORE: 11/12
+Force unwrapping
+SCORE: 5/6
+Implicitly unwrapped optionals
+SCORE: 6/6
+Nil coalescing
+SCORE: 11/12
+Optional chaining
+SCORE: 8/12
+Optional try
+SCORE: 5/6
+Failable initializers
+SCORE: 10/12
+Typecasting
+SCORE: 7/12
+Optionals: Summary
+SCORE: 10/12
