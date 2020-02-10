@@ -246,3 +246,15 @@ Typecasting
 SCORE: 7/12
 Optionals: Summary
 SCORE: 10/12
+
+## Day13
+
+Variables and constants
+Types of Data
+Operators
+String interpolation
+Arrays
+Dictionaries
+Conditional statements
+Loops
+Switch case
