@@ -258,3 +258,12 @@ Dictionaries
 Conditional statements
 Loops
 Switch case
+
+## Day14
+
+Functions
+Optionals
+Optional chaining
+Enumerations
+Structs
+Classes
