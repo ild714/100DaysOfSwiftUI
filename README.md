@@ -22,6 +22,7 @@ SCORE: 6/6
 
 ## Day2
 
+
 Complex Types
 Arrays
 SCORE: 6/6
@@ -34,17 +35,18 @@ SCORE: 5/6
 Dictionaries
 SCORE: 6/6
 Dictionary default values
-SCORE: 11/12
+SCORE: 8/12
 Creating empty collections
 SCORE: 6/6
 Enumerations
-SCORE: 5/6
+SCORE: 6/6
 Enum associated values
 SCORE: 6/6
 Enum raw values
 SCORE: 6/6
 Complex types: Summary
 SCORE: 4/6
+
 
 ## Day3
 
@@ -53,22 +55,24 @@ Operators and conditions
 Arithmetic operators
 SCORE: 6/6
 Operator overloading
-SCORE: 11/12
+SCORE: 12/12
 Compound assignment operators
 SCORE: 6/6
 Comparison operators
 SCORE: 6/6
 Conditions
-SCORE: 10/12
+SCORE: 12/12
 Combining conditions
-SCORE: 11/12
+SCORE: 12/12
 The ternary operator
-SCORE: 11/12
+SCORE: 12/12
 Switch statements
 SCORE: 6/6
 Range operators
+SCORE: 5/6
 Operators and conditions: Summary
 SCORE: 9/12
+
 
 ## Day4
 
