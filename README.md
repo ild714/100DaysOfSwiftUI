@@ -271,3 +271,11 @@ Optional chaining
 Enumerations
 Structs
 Classes
+
+## Day15
+
+Properties
+Static properties and methods
+Access control
+Polymorphism and typecasting
+Closures
