@@ -226,7 +226,6 @@ SCORE: 8/12
 
 ## Day12
 
-
 Optionals
 Handling missing data
 SCORE: 6/6
