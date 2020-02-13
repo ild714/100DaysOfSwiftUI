@@ -279,3 +279,13 @@ Static properties and methods
 Access control
 Polymorphism and typecasting
 Closures
+
+## Day16
+
+WeSplit: Introduction
+Understanding the basic structure of a SwiftUI app
+Creating a form
+Adding a navigation bar
+Modifying program state
+Binding state to user interface controls
+Creating views in a loop
