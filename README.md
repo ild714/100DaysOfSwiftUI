@@ -300,3 +300,14 @@ Calculating the total per person
 
 WeSplit: Wrap up
 Review for Project 1: WeSplit
+
+## Day19 (Chellange1)
+
+## Day20
+
+Guess the Flag: Introduction
+Using stacks to arrange views
+Colors and frames
+Gradients
+Buttons and images
+Showing alert messages
