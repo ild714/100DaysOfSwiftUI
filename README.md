@@ -311,3 +311,9 @@ Colors and frames
 Gradients
 Buttons and images
 Showing alert messages
+
+## Day21
+
+Stacking up buttons
+Showing the player’s score with an alert
+Styling our flags
