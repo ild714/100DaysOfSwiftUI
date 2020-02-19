@@ -58,17 +58,18 @@ struct ContentView: View {
         }
         
         .alert(isPresented: $showingScore){
-            
-            Alert(title:Text(scoreTitle),message:Text("Your score is \(score)"),dismissButton: .default(Text("Continue")){
-                self.askQuestion()
-                })
+            switch activeAlert {
+            case .first:
+                return Alert(title:Text(scoreTitle),message:Text("Your score is \(score)"),dismissButton: .default(Text("Continue")){
+                    self.askQuestion()
+                    })
+            case .second:
+                return  Alert(title: Text("Wrong!"), message: Text("That's the flag of \(countries[current])"), dismissButton: .default(Text("Continue")){
+                    self.askQuestinonAfterMistake()
+                    })
+            }
         }
-            
-        .alert(isPresented:$showMistake){
-            Alert(title: Text("Wrong!"), message: Text("That's the flag of \(countries[current])"), dismissButton: .default(Text("Continue")){
-                self.askQuestinonAfterMistake()
-            })
-        }
+        
     }
     
     func flagTapped(_ number: Int){
