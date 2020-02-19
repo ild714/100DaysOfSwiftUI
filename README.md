@@ -317,3 +317,8 @@ Showing alert messages
 Stacking up buttons
 Showing the player’s score with an alert
 Styling our flags
+
+## Day22
+
+Guess the Flag: Wrap up
+Review for Project 2: Guess the Flag
