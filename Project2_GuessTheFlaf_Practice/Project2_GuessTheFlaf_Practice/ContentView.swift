@@ -12,6 +12,19 @@ enum ActiveAlert {
     case first, second
 }
 
+//struct Image:ViewModifier {
+//
+//    func body(content:Content) -> some View {
+//        content
+//        .renderingMode(.original)
+//        .clipShape(Capsule())
+//        .overlay(Capsule().stroke(Color.black,lineWidth: 1))
+//        .shadow(color:.black,radius:2)
+//    }
+//}
+
+
+
 struct ContentView: View {
     
     @State private var countries = ["Estonia","France","Germany","Ireland","Italy","Nigeria","Poland","Russia","Spain","UK","US"].shuffled()
@@ -25,6 +38,7 @@ struct ContentView: View {
     @State private var current = 0
     
     @State private var activeAlert: ActiveAlert = .first
+    
     
     var body: some View {
         ZStack{

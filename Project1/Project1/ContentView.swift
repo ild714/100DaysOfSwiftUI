@@ -13,8 +13,10 @@ struct ContentView: View {
     @State private var numberOfPeople = ""
     @State private var tipPercentage = 2
     
+    @State private var checkPercent = true
     
     let tipPercentages = [10,15,20,25,0]
+    
     
    
     var totalPerPerson: Double {
@@ -46,7 +48,7 @@ struct ContentView: View {
                 Section{
                     TextField("Amount",text: $checkAmount)
                         .keyboardType(.decimalPad)
-                    
+                   
 //                    Picker("Number of people",selection: $numberOfPeople){
 //                        ForEach(2..<100){
 //                            Text("\($0) people")
@@ -62,11 +64,16 @@ struct ContentView: View {
                             Text("\(self.tipPercentages[$0])%")
                         }
                     }.pickerStyle(SegmentedPickerStyle())
-                
+                    
                 }
+                
+               
                 
                 Section(header:Text("All amount")){
                     Text("$\(total,specifier: "%.2f")")
+                    
+                        .foregroundColor(checkPercent ? .black : .red)
+                    
                 }
                 
                 Section(header:Text("Amount per person")){
@@ -74,6 +81,12 @@ struct ContentView: View {
                 }
             }
         .navigationBarTitle("WeSplit")
+        }
+    }
+    
+    func check() {
+        if tipPercentage == 4 {
+            checkPercent.toggle()
         }
     }
 }

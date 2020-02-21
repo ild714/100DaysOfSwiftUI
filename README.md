@@ -337,3 +337,7 @@ View composition
 Custom modifiers
 Custom containers
 
+## Day24
+
+Views and modifiers: Wrap up
+Review for Project 3: Views and Modifiers
