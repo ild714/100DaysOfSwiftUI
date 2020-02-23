@@ -345,3 +345,11 @@ Review for Project 3: Views and Modifiers
 ## Day25
 
 Challenge2
+
+## Day26
+
+BetterRest: Introduction
+Entering numbers with Stepper
+Selecting dates and times with DatePicker
+Working with dates
+Training a model with Create ML
