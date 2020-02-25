@@ -359,3 +359,8 @@ Training a model with Create ML
 Building a basic layout
 Connecting SwiftUI to Core ML
 Cleaning up the user interface
+
+## Day28
+
+BetterRest: Wrap up
+Review for Project 4: BetterRest

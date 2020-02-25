@@ -21,21 +21,34 @@ struct ContentView: View {
     @State private var sleepAmount = 8.0
     @State private var coffeeAmount = 1
     
+    @State private var hidden = false
     @State private var alertTitle = ""
     @State private var alertMessage = ""
     @State private var showingAlert = false
+    @State private var buttonTime = "Tap button for showing time"
+    
+    @State private var selected = 0
+    var coffee = ["1","2","3","4","5"]
     
     var body: some View {
         NavigationView{
             Form{
-                Text("When do you want to wake up?")
-                    .font(.headline)
                 
-                DatePicker("Please enter a time",selection:$wakeUp,displayedComponents:.hourAndMinute)
-                .labelsHidden()
-                    .datePickerStyle(WheelDatePickerStyle())
-             
-                VStack(alignment:.leading,spacing:0){
+                Section {
+                    Text(buttonTime)
+                        .font(.custom("",size: 15))
+                }
+                
+                Section{
+                    Text("When do you want to wake up?")
+                        .font(.headline)
+                    
+                    DatePicker("Please enter a time",selection:$wakeUp,displayedComponents:.hourAndMinute)
+                        .labelsHidden()
+                        .datePickerStyle(WheelDatePickerStyle())
+                }
+                
+                Section{
                     Text("Desired amount of sleep")
                         .font(.headline)
                     
@@ -44,26 +57,35 @@ struct ContentView: View {
                     }
                 }
                 
-                VStack(alignment:.leading,spacing:0){
+                Section{
                     Text("Daily coffee intake")
                         .font(.headline)
                     
-                    Stepper(value: $coffeeAmount, in: 1...20){
-                        if coffeeAmount == 1 {
-                            Text("1 cup")
-                        } else {
-                            Text("\(coffeeAmount) cups")
+//                    Stepper(value: $coffeeAmount, in: 1...20){
+//                        if coffeeAmount == 1 {
+//                            Text("1 cup")
+//                        } else {
+//                            Text("\(coffeeAmount) cups")
+//                        }
+//                    }
+                    Picker(selection: $selected,label:Text("test")) {
+                        ForEach(0 ..< coffee.count){
+                            Text(self.coffee[$0])
                         }
-                    }
+                    }.pickerStyle(SegmentedPickerStyle())
                 }
             }
-            .navigationBarTitle("BetterRest")
+            
+    
             .navigationBarItems(trailing:
-                Button(action:calculateBedtime){
+                Button(action: {
+                    self.calculateBedtime()
+                    
+                }){
                    Text("Calculate")
                 }
                    )
-            
+                .navigationBarHidden(hidden)
                 .alert(isPresented:$showingAlert){
                     Alert(title:Text(alertTitle),message: Text(alertMessage),dismissButton: .default(Text("OK")))
             }
@@ -80,7 +102,7 @@ struct ContentView: View {
         let minute = (components.minute ?? 0) * 60
         
         do {
-            let prediction = try model.prediction(wake: Double(hour + minute),estimatedSleep: sleepAmount, coffee: Double(coffeeAmount))
+            let prediction = try model.prediction(wake: Double(hour + minute),estimatedSleep: sleepAmount, coffee: Double(selected+1))
             let sleepTime = wakeUp - prediction.actualSleep
             
             let formatter = DateFormatter()
@@ -93,9 +115,10 @@ struct ContentView: View {
             alertMessage = "Sorry,there was a problem calculating your bedtime."
         }
         
-       
-        showingAlert = true
-        
+        hidden = true
+        buttonTime = "Your ideal time is \(alertMessage)"
+        //showingAlert = true
+                
     }
 }
 
