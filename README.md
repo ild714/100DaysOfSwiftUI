@@ -364,3 +364,10 @@ Cleaning up the user interface
 
 BetterRest: Wrap up
 Review for Project 4: BetterRest
+
+## Day29
+
+Word Scramble: Introduction
+Introducing List, your best friend
+Loading resources from your app bundle
+Working with strings
