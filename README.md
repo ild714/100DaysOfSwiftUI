@@ -371,3 +371,9 @@ Word Scramble: Introduction
 Introducing List, your best friend
 Loading resources from your app bundle
 Working with strings
+
+## Day30
+
+Adding to a list of words
+Running code when our app launches
+Validating words with UITextChecker
