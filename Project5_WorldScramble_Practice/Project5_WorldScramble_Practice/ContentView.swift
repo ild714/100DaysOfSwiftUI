@@ -18,6 +18,8 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var sumLetters = 0
+    
     var body: some View {
         NavigationView{
             VStack {
@@ -26,12 +28,17 @@ struct ContentView: View {
                     .padding()
                     .autocapitalization(.none)
                 
+                Text("Amount of words: \(usedWords.count), amount of letters: \(sumLetters)")
+                
                 List(usedWords,id:\.self){
                     Image(systemName:"\($0.count).circle")
                     Text($0)
                     
                 }
             }
+            .navigationBarItems(leading: Button("Restart"){
+                self.startGame()
+            })
         .navigationBarTitle(rootWord)
         .onAppear(perform: startGame)
             .alert(isPresented:$showingError){
@@ -63,6 +70,7 @@ struct ContentView: View {
         }
         
         usedWords.insert(answer,at:0)
+        self.sumLetters+=answer.count
         newWord = ""
     }
     
@@ -99,7 +107,7 @@ struct ContentView: View {
         let checker = UITextChecker()
         let range = NSRange(location: 0,length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
-        return misspelledRange.location == NSNotFound
+        return misspelledRange.location == NSNotFound && word.count > 3 && word != rootWord
     }
     
     func wordError(title: String,message: String){

@@ -377,3 +377,8 @@ Working with strings
 Adding to a list of words
 Running code when our app launches
 Validating words with UITextChecker
+
+## Day31 
+
+Word Scramble: Wrap up
+Review for Project 5: Word Scramble
