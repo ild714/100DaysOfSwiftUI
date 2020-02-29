@@ -382,3 +382,11 @@ Validating words with UITextChecker
 
 Word Scramble: Wrap up
 Review for Project 5: Word Scramble
+
+## Day32
+
+Animation: Introduction
+Creating implicit animations
+Customizing animations in SwiftUI
+Animating bindings
+Creating explicit animations
