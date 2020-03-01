@@ -390,3 +390,10 @@ Creating implicit animations
 Customizing animations in SwiftUI
 Animating bindings
 Creating explicit animations
+
+## Day33
+
+Controlling the animation stack
+Animating gestures
+Showing and hiding views with transitions
+Building custom transitions using ViewModifier
