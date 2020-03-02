@@ -28,7 +28,7 @@ struct ContentView: View {
     //@State private var animationAmount: CGFloat = 1
     let letters = Array("Hello SwiftUI")
     
-    @State private var animationAmount = 0.0
+    
     @State private var enabled = false
     
     @State private var dragAmount = CGSize.zero

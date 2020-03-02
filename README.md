@@ -397,3 +397,8 @@ Controlling the animation stack
 Animating gestures
 Showing and hiding views with transitions
 Building custom transitions using ViewModifier
+
+## Day34
+
+Animation: Wrap up
+Review for Project 6: Animation

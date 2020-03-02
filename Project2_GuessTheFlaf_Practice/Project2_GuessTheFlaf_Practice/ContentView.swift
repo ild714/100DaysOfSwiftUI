@@ -26,7 +26,7 @@ enum ActiveAlert {
 
 
 struct ContentView: View {
-    
+    @State private var animationAmount = 0.0
     @State private var countries = ["Estonia","France","Germany","Ireland","Italy","Nigeria","Poland","Russia","Spain","UK","US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
@@ -55,17 +55,29 @@ struct ContentView: View {
                 
                 ForEach(0..<3){number
                     in Button(action:{
+                        if number == self.correctAnswer{
+                        withAnimation(.interpolatingSpring(stiffness: 5, damping: 1)) {
+                                           self.animationAmount += 360
+                                      }
+                        }
                         self.current = number
                         self.flagTapped(number)
+                        
                     }){
                         Image(self.countries[number])
                             .renderingMode(.original)
                             .clipShape(Capsule())
                             .overlay(Capsule().stroke(Color.black,lineWidth: 1))
                             .shadow(color:.black,radius:2)
+                            
+                             
                     }
+                  
+                    
+                   // .rotation3DEffect(.degrees(self.animationAmount), axis: (x:0, y:1, z: 1))
+                    
                 }
-                
+                 
                 Text("Your score:\(score)").foregroundColor(.white)
                 Spacer()
             }
@@ -91,12 +103,15 @@ struct ContentView: View {
             scoreTitle = "Correct"
             score+=1
             self.activeAlert = .first
+            
+            
         } else {
             //scoreTitle = "Wrong"
             score-=1
             self.activeAlert = .second
         }
         showingScore = true
+        
     }
     
     func askQuestion(){
