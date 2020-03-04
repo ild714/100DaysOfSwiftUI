@@ -406,3 +406,13 @@ Review for Project 6: Animation
 ## Day35
 
 Challenge3
+
+## Day36
+
+iExpense: Introduction
+Why @State only works with structs
+Sharing SwiftUI state with @ObservedObject
+Showing and hiding views
+Deleting items using onDelete()
+Storing user settings with UserDefaults
+Archiving Swift objects with Codable
