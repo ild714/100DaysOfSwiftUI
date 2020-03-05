@@ -13,6 +13,8 @@
 		21378D8E2410DD0500619D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21378D8D2410DD0500619D64 /* Assets.xcassets */; };
 		21378D912410DD0500619D64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21378D902410DD0500619D64 /* Preview Assets.xcassets */; };
 		21378D942410DD0500619D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21378D922410DD0500619D64 /* LaunchScreen.storyboard */; };
+		21378D9C2410DDBB00619D64 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21378D9B2410DDBB00619D64 /* ExpenseItem.swift */; };
+		21378D9E2410EF3800619D64 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21378D9D2410EF3800619D64 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		21378D902410DD0500619D64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		21378D932410DD0500619D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21378D952410DD0500619D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21378D9B2410DDBB00619D64 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		21378D9D2410EF3800619D64 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				21378D872410DD0300619D64 /* AppDelegate.swift */,
 				21378D892410DD0300619D64 /* SceneDelegate.swift */,
 				21378D8B2410DD0300619D64 /* ContentView.swift */,
+				21378D9D2410EF3800619D64 /* AddView.swift */,
+				21378D9B2410DDBB00619D64 /* ExpenseItem.swift */,
 				21378D8D2410DD0500619D64 /* Assets.xcassets */,
 				21378D922410DD0500619D64 /* LaunchScreen.storyboard */,
 				21378D952410DD0500619D64 /* Info.plist */,
@@ -148,7 +154,9 @@
 			files = (
 				21378D882410DD0300619D64 /* AppDelegate.swift in Sources */,
 				21378D8A2410DD0300619D64 /* SceneDelegate.swift in Sources */,
+				21378D9E2410EF3800619D64 /* AddView.swift in Sources */,
 				21378D8C2410DD0300619D64 /* ContentView.swift in Sources */,
+				21378D9C2410DDBB00619D64 /* ExpenseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -416,3 +416,11 @@ Showing and hiding views
 Deleting items using onDelete()
 Storing user settings with UserDefaults
 Archiving Swift objects with Codable
+
+## Day37
+
+Building a list we can delete from
+Working with Identifiable items in SwiftUI
+Sharing an observed object with a new view
+Making changes permanent with UserDefaults
+Final polish
