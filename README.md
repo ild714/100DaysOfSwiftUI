@@ -424,3 +424,8 @@ Working with Identifiable items in SwiftUI
 Sharing an observed object with a new view
 Making changes permanent with UserDefaults
 Final polish
+
+## Day38 
+
+iExpense: Wrap up
+Review for Project 7: iExpense
