@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Project8_Moonshot_practice
 //
-//  Created by Ильдар Нигметзянов on 07.03.2020.
+//  Created by Ильдар Нигметзянов on 08.03.2020.
 //  Copyright © 2020 Ildar. All rights reserved.
 //
 
