@@ -449,3 +449,8 @@ Formatting our mission view
 Showing mission details with ScrollView and GeometryReader
 Merging Codable structs using first(where:)
 Fixing problems with buttonStyle() and layoutPriority()
+
+## Day42 
+
+Moonshot: Wrap up
+Review for Project 8: Moonshot

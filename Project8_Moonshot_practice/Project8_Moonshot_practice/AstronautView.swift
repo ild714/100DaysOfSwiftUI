@@ -11,6 +11,7 @@ import SwiftUI
 struct AstronautView: View {
     
     let astronaut: Astronaut
+    let mission: Mission
     
     var body: some View {
         GeometryReader{ geometry in
@@ -20,6 +21,7 @@ struct AstronautView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: geometry.size.width)
+                    Text("Mission: \(self.mission.displayName)")
                     Text(self.astronaut.description)
                         .padding()
                     .layoutPriority(1)
@@ -33,8 +35,9 @@ struct AstronautView: View {
 struct AstronautView_Previews: PreviewProvider {
     
     static let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+    static let mission: [Mission] = Bundle.main.decode("missions.json")
     
     static var previews: some View {
-        AstronautView(astronaut: astronauts[0])
+        AstronautView(astronaut: astronauts[0],mission: mission[0])
     }
 }

@@ -20,6 +20,10 @@ struct Mission: Codable, Identifiable{
         }
     }
     
+    var name : String {
+        "Crew names: \(crew[0].name),\(crew[1].name),\(crew[2].name)"
+    }
+ 
     var displayName: String {
         "Apollo \(id)"
     }
