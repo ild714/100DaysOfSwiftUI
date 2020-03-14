@@ -473,3 +473,8 @@ Enabling high-performance Metal rendering with drawingGroup()
 Special effects in SwiftUI: blurs, blending, and more
 Animating simple shapes with animatableData
 Animating complex shapes with AnimatablePair
+
+## Day46
+
+Drawing: Wrap up
+Review for Project 9: Drawing

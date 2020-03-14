@@ -21,6 +21,29 @@ struct Triangle: Shape {
     }
 }
 
+struct Array: InsettableShape {
+    
+    func inset(by amount: CGFloat) -> some InsettableShape {
+        return self
+    }
+    
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        
+        path.move(to: CGPoint(x: 50, y: 0))
+        
+        path.addLine(to: CGPoint(x: 0, y: 50))
+        path.addLine(to: CGPoint(x: 30, y: 50))
+        path.addLine(to: CGPoint(x: 30, y: 100))
+        path.addLine(to: CGPoint(x: 70, y: 100))
+        path.addLine(to: CGPoint(x: 70, y: 50))
+        path.addLine(to: CGPoint(x: 100, y: 50))
+        path.addLine(to: CGPoint(x: 50, y: 0))
+        
+        return path
+    }
+}
+
 struct Flower: Shape {
     var petalOffset: Double = -20
     var petalWidth: Double = 100
@@ -178,7 +201,9 @@ struct ContentView: View {
     @State private var petalOffset = -20.0
     @State private var petalWidth = 100.0
     
-    //@State private var amount: CGFloat = 0.0
+    @State private var amount1: Double = 0.0
+    @State private var amount2: Double = 0.0
+    @State private var amount3: Double = 0.0
     @State private var insetAmount: CGFloat = 50
     
     @State private var rows = 4
@@ -187,10 +212,18 @@ struct ContentView: View {
     @State private var innerRadius = 125.0
     @State private var outerRadius = 75.0
     @State private var distance = 125.0
-    @State private var amount : CGFloat = 1.0
+    //@State private var amount : CGFloat = 1.0
     @State private var hue = 0.6
     
     var body: some View {
+        
+        //Array()
+            //.strokeBorder(10)
+            //.frame(width:100,height:100)
+        
+//            //.animation(rotationEffect(10.))
+//            .offset(x:0,y:400)
+    
 //        Path { path in
 //            path.move(to:CGPoint(x:200,y:100))
 //            path.addLine(to: CGPoint(x:100,y: 300))
@@ -199,8 +232,8 @@ struct ContentView: View {
 //            //path.addLine(to:CGPoint(x:100,y:300))
 //
 //        }
-        //.fill(Color.blue)
-            //.stroke(Color.blue,lineWidth: 10)
+//        .fill(Color.blue)
+//            .stroke(Color.blue,lineWidth: 10)
 //            .stroke(Color.blue,style:StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
 //        Triangle()
 //            .fill(Color.red)
@@ -209,10 +242,10 @@ struct ContentView: View {
 //        Arc(startAngle: .degrees(0), endAngle: .degrees(180), clockwise: true)
 //            .stroke(Color.blue,lineWidth: 10)
 //            .frame(width:300,height: 300)
-        //Circle()
+//        Circle()
 //        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
-//            .strokeBorder(Color.blue,lineWidth: 6)
-//
+//            .strokeBorder(Color.blue,lineWidth: 9)
+
 //        VStack {
 //            Flower(petalOffset: petalOffset, petalWidth: petalWidth)
 //                //.stroke(Color.red,lineWidth: 1)
@@ -229,7 +262,7 @@ struct ContentView: View {
         
 //        Rectangle()
 //            .strokeBorder(ImagePaint(image:Image("Example"),scale:0.6),lineWidth: 50)
-//            .frame(width:400,height:400)
+            //.frame(width:400,height:400)
         
 //        ZStack{
 //            Image("Example")
@@ -268,6 +301,28 @@ struct ContentView: View {
 //        .background(Color.black)
 //        .edgesIgnoringSafeArea(.all)
 
+                VStack{
+                    ZStack{
+                        Circle()
+                            .fill(Color(red:amount1,green:amount2,blue:amount3))
+                            //.frame(width:200)
+                            //.offset(x:-50,y:-80)
+                            .blendMode(.screen)
+                       
+                    }
+                    //.frame(width:300,height:300)
+        
+                    Slider(value:$amount1,in: 0...1)
+                        .padding()
+                    Slider(value:$amount2,in: 0...1)
+                    .padding()
+                    Slider(value:$amount3,in: 0...1)
+                    .padding()
+                }
+                .frame(maxWidth:.infinity,maxHeight: .infinity)
+                .background(Color.black)
+               
+        
         
 //       Trapezoid(insetAmount: insetAmount)
 //        .frame(width: 200, height:100)
@@ -285,36 +340,36 @@ struct ContentView: View {
 //                }
 //        }
         
-        VStack(spacing: 0){
-            Spacer()
-            
-            Spirograph(innerRadius: Int(innerRadius), outerRadius: Int(outerRadius), distance: Int(distance), amount: amount)
-                           .stroke(Color(hue: hue, saturation: 1, brightness: 1), lineWidth: 1)
-                           .frame(width: 300, height: 300)
-        Spacer()
-
-        Group {
-            Text("Inner radius: \(Int(innerRadius))")
-            Slider(value: $innerRadius, in: 10...150, step: 1)
-                .padding([.horizontal, .bottom])
-
-            Text("Outer radius: \(Int(outerRadius))")
-            Slider(value: $outerRadius, in: 10...150, step: 1)
-                .padding([.horizontal, .bottom])
-
-            Text("Distance: \(Int(distance))")
-            Slider(value: $distance, in: 1...150, step: 1)
-                .padding([.horizontal, .bottom])
-
-            Text("Amount: \(amount, specifier: "%.2f")")
-            Slider(value: $amount)
-                .padding([.horizontal, .bottom])
-
-            Text("Color")
-            Slider(value: $hue)
-                .padding(.horizontal)
-        }
-        }
+//        VStack(spacing: 0){
+//            Spacer()
+//
+//            Spirograph(innerRadius: Int(innerRadius), outerRadius: Int(outerRadius), distance: Int(distance), amount: amount)
+//                           .stroke(Color(hue: hue, saturation: 1, brightness: 1), lineWidth: 1)
+//                           .frame(width: 300, height: 300)
+//        Spacer()
+//
+//        Group {
+//            Text("Inner radius: \(Int(innerRadius))")
+//            Slider(value: $innerRadius, in: 10...150, step: 1)
+//                .padding([.horizontal, .bottom])
+//
+//            Text("Outer radius: \(Int(outerRadius))")
+//            Slider(value: $outerRadius, in: 10...150, step: 1)
+//                .padding([.horizontal, .bottom])
+//
+//            Text("Distance: \(Int(distance))")
+//            Slider(value: $distance, in: 1...150, step: 1)
+//                .padding([.horizontal, .bottom])
+//
+//            Text("Amount: \(amount, specifier: "%.2f")")
+//            Slider(value: $amount)
+//                .padding([.horizontal, .bottom])
+//
+//            Text("Color")
+//            Slider(value: $hue)
+//                .padding(.horizontal)
+//        }
+//        }
         
     }
 }
