@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Habit:Identifiable {
+struct Habit:Identifiable,Codable {
     let id = UUID()
     let title: String
     let description: String
-    let time: Int
+    let amount: Int
 }

@@ -10,9 +10,25 @@ import SwiftUI
 
 class Habits:ObservableObject {
     
-    @Published var items : [Habit]
+    @Published var items : [Habit] {
+        didSet{
+            let encoder = JSONEncoder()
+            if let data = try? encoder.encode(items){
+                UserDefaults.standard.set(data, forKey: "Date")
+            }
+        }
+    }
     
     init() {
+        
+        if let data = UserDefaults.standard.data(forKey:"Date"){
+            let decoder = JSONDecoder()
+            if let decoded = try? decoder.decode([Habit].self, from: data){
+                self.items = decoded
+                return
+            }
+        }
+        
         self.items = []
     }
 }
@@ -39,7 +55,8 @@ struct ContentView: View {
                             
                         }
                         Spacer()
-                        Text("Time: \(String(item.time))")
+                        Text("Time: \(String(item.amount))")
+                        NavigationLink(destination: DetailView(habits: habits))
                     }
                     
                 }
@@ -59,6 +76,8 @@ struct ContentView: View {
     
     func remove(at index: IndexSet){
         habits.items.remove(atOffsets: index)
+        
+        
     }
 }
 
