@@ -43,25 +43,27 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(habits.items){item in
-                    HStack{
-                        VStack(alignment: .leading){
-                            Text("Title:")
-                                .font(.headline)
-                            Text(item.title)
-                            Spacer(minLength: CGFloat(20))
-                            Text("Description:")
-                                .font(.headline)
-                            Text(item.description)
+                    NavigationLink(destination: EditedCell(habit: item)){
+                        HStack{
+                            VStack(alignment: .leading){
+                                Text("Title:")
+                                    .font(.headline)
+                                Text(item.title)
+                                Spacer(minLength: CGFloat(20))
+                                Text("Description:")
+                                    .font(.headline)
+                                Text(item.description)
+                                
+                            }
+                            Spacer()
+                            Text("Time: \(String(item.amount))")
                             
                         }
-                        Spacer()
-                        Text("Time: \(String(item.amount))")
-                        NavigationLink(destination: DetailView(habits: habits))
                     }
-                    
                 }
                 .onDelete(perform: remove)
             }
+            
                 
             .navigationBarItems(trailing: Button(action:{
                 self.showDetailView = true
@@ -76,7 +78,6 @@ struct ContentView: View {
     
     func remove(at index: IndexSet){
         habits.items.remove(atOffsets: index)
-        
         
     }
 }

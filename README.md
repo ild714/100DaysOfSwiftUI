@@ -486,3 +486,11 @@ Challenge4
 ## Day48
 
 Day 48 – Expanding your horizons
+
+## Day49
+
+Cupcake Corner: Introduction
+Adding Codable conformance for @Published properties
+Sending and receiving Codable data with URLSession and SwiftUI
+Validating and disabling forms
+
