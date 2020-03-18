@@ -494,3 +494,8 @@ Adding Codable conformance for @Published properties
 Sending and receiving Codable data with URLSession and SwiftUI
 Validating and disabling forms
 
+## Day50
+
+Taking basic order details
+Checking for a valid address
+Preparing for checkout
