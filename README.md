@@ -499,3 +499,8 @@ Validating and disabling forms
 Taking basic order details
 Checking for a valid address
 Preparing for checkout
+
+## Day51
+
+Encoding an ObservableObject class
+Sending and receiving orders over the internet
