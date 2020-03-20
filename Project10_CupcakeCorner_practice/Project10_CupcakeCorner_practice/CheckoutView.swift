@@ -10,8 +10,10 @@ import SwiftUI
 
 struct CheckoutView: View {
     
+    @State private var title = ""
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+    //@State private var internetProblem = false
     @ObservedObject var order: Order
     
     var body: some View {
@@ -19,7 +21,7 @@ struct CheckoutView: View {
             ScrollView{
                 VStack{
                     Image("cupcakes")
-                    .resizable()
+                        .resizable()
                         .scaledToFit()
                         .frame(width: geo.size.width)
                     
@@ -28,14 +30,16 @@ struct CheckoutView: View {
                     Button("Place Order"){
                         self.placeOrder()
                     }
-                .padding()
+                    .padding()
                 }
             }
-            
-            }
-            .alert(isPresented: $showingConfirmation){
-            Alert(title: Text("Thank you!"), message: Text(confirmationMessage), dismissButton: .default(Text("OK")))
         }
+        .alert(isPresented: $showingConfirmation){
+            Alert(title: Text(title), message: Text(confirmationMessage), dismissButton: .default(Text("OK")))
+        }
+//        .alert(isPresented:$internetProblem){
+//            Alert(title: Text("Problem with internet connection"), message: Text("Check your internet"), dismissButton: .default(Text("OK")))
+//        }
     }
     
     func placeOrder(){
@@ -52,12 +56,17 @@ struct CheckoutView: View {
         
         URLSession.shared.dataTask(with: request){data, response,error in
             guard let data = data else {
-                print("No data in response: \(error?.localizedDescription ?? "Unknown error").")
+//                print("No data in response: \(error?.localizedDescription ?? "Unknown error").")
+                self.title = "Problem with internet connection"
+                self.confirmationMessage = "Turn on your internet"
+                self.showingConfirmation = true
                 return
             }
             
             if let decoderOrder = try? JSONDecoder().decode(Order.self,from: data){
-                self.confirmationMessage = "Your order for \(decoderOrder.quantity)x \(Order.types[decoderOrder.type].lowercased()) cupcakes is on its way!"
+                self.title = "Thank you"
+                self.confirmationMessage = "Your order for \(decoderOrder.order.quantity)x \(Order.types[decoderOrder.order.type].lowercased()) cupcakes is on its way!"
+                print("res")
                 self.showingConfirmation = true
             }else {
                 print("Invalid response from server")

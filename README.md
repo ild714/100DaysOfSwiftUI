@@ -504,3 +504,8 @@ Preparing for checkout
 
 Encoding an ObservableObject class
 Sending and receiving orders over the internet
+
+## Day52 
+
+Cupcake Corner: Wrap up
+Review for Project 10: Cupcake Corner
