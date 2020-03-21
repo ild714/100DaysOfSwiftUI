@@ -509,3 +509,10 @@ Sending and receiving orders over the internet
 
 Cupcake Corner: Wrap up
 Review for Project 10: Cupcake Corner
+
+## Day53
+
+Bookworm: Introduction
+Creating a custom component with @Binding
+Using size classes with AnyView type erasure
+How to combine Core Data and SwiftUI
