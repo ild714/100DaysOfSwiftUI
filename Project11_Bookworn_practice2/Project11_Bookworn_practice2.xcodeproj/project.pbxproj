@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21215EDB242935B600A08B12 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21215EDA242935B600A08B12 /* DetailView.swift */; };
 		2124041A24278C0C0061F5CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124041924278C0C0061F5CC /* AppDelegate.swift */; };
 		2124041C24278C0C0061F5CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124041B24278C0C0061F5CC /* SceneDelegate.swift */; };
 		2124041F24278C0C0061F5CC /* Project11_Bookworn_practice2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2124041D24278C0C0061F5CC /* Project11_Bookworn_practice2.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21215EDA242935B600A08B12 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2124041624278C0C0061F5CC /* Project11_Bookworn_practice2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project11_Bookworn_practice2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2124041924278C0C0061F5CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2124041B24278C0C0061F5CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				212404322427A4960061F5CC /* RatingView.swift */,
 				212404342427BA180061F5CC /* EmojiRatingView.swift */,
 				2124043024278D950061F5CC /* AddBookView.swift */,
+				21215EDA242935B600A08B12 /* DetailView.swift */,
 				2124042224278C130061F5CC /* Assets.xcassets */,
 				2124042724278C130061F5CC /* LaunchScreen.storyboard */,
 				2124042A24278C130061F5CC /* Info.plist */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2124041A24278C0C0061F5CC /* AppDelegate.swift in Sources */,
+				21215EDB242935B600A08B12 /* DetailView.swift in Sources */,
 				2124041F24278C0C0061F5CC /* Project11_Bookworn_practice2.xcdatamodeld in Sources */,
 				212404352427BA180061F5CC /* EmojiRatingView.swift in Sources */,
 				2124042124278C0C0061F5CC /* ContentView.swift in Sources */,

@@ -522,3 +522,10 @@ How to combine Core Data and SwiftUI
 Creating books with Core Data
 Adding a custom star rating component
 Building a list with @FetchRequest
+
+## Day55
+
+Showing book details
+Sorting fetch requests with NSSortDescriptor
+Deleting from a Core Data fetch request
+Using an alert to pop a NavigationLink programmatically
