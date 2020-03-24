@@ -529,3 +529,8 @@ Showing book details
 Sorting fetch requests with NSSortDescriptor
 Deleting from a Core Data fetch request
 Using an alert to pop a NavigationLink programmatically
+
+## Day56
+
+Bookworm: Wrap up
+Review for Project 11: Bookworm

@@ -15,6 +15,7 @@ struct DetailView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var showingDeleteAlert = false
     let book: Book
+    //let formatter = DateFormatter()
     
     var body: some View {
         GeometryReader{ geometry in
@@ -40,6 +41,9 @@ struct DetailView: View {
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
                 
+                
+                Text(self.date(date: self.book.date ?? Date()))
+                
                 Spacer()
             }
         }
@@ -61,6 +65,13 @@ struct DetailView: View {
         
         try? self.moc.save()
         presentationMode.wrappedValue.dismiss()
+    }
+    
+    func date(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        let dateString = formatter.string(from: date)
+        return dateString
     }
 }
 

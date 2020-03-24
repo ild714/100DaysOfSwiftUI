@@ -20,12 +20,20 @@ struct ContentView: View {
             List{
                 ForEach(books,id: \.self){book in
                     NavigationLink(destination: DetailView(book: book)){
+                        
                         EmojiRatingView(rating: book.rating)
-                            .font(.largeTitle)
+                            //.font(.largeTitle)
                         
                         VStack(alignment: .leading){
-                            Text(book.title ?? "Unknown Title")
-                                .font(.headline)
+                            if book.rating == 1 {
+                                AnyView(Text(book.title ?? "Unknown Title")
+                                    .foregroundColor(Color.red))
+                                
+                            } else {
+                                AnyView(Text(book.title ?? "Unknown Title")
+                                    .font(.headline)
+                                )
+                            }
                             Text(book.author ?? "Unknown Author")
                                 .foregroundColor(.secondary)
                         }
