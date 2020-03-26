@@ -542,3 +542,9 @@ Why does \.self work for ForEach?
 Creating NSManagedObject subclasses
 Conditional saving of NSManagedObjectContext
 Ensuring Core Data objects are unique using constraints
+
+## Day58
+
+Filtering @FetchRequest using NSPredicate
+Dynamically filtering @FetchRequest with SwiftUI
+One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
