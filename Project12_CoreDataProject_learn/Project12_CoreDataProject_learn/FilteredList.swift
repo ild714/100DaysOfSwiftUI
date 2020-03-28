@@ -9,6 +9,11 @@
 import SwiftUI
 import CoreData
 
+enum Predict {
+    case beginsWith
+    case lover
+}
+
 struct FilteredList<T:NSManagedObject,Content:View>: View {
     
     var fetchRequest : FetchRequest<T>
@@ -18,8 +23,17 @@ struct FilteredList<T:NSManagedObject,Content:View>: View {
     
     let content: (T) -> Content
     
-    init(filterKey: String,filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
-        fetchRequest = FetchRequest<T>(entity: T.entity(), sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH %@", filterKey,filterValue))
+    init(filterKey: String,filterValue: String,predict:Predict, @ViewBuilder content: @escaping (T) -> Content) {
+        
+        let predictRes : String
+        switch predict {
+        case .beginsWith:
+            predictRes = "beginsWith"
+        default:
+            predictRes = "<"
+        }
+        
+        fetchRequest = FetchRequest<T>(entity: T.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Singer.firstName, ascending: true),NSSortDescriptor(keyPath: \Singer.lastName, ascending: true)], predicate: NSPredicate(format: "%K \(predictRes) %@", filterKey,filterValue))
         self.content = content
     }
     

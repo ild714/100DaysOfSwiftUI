@@ -86,7 +86,7 @@ struct ContentView: View {
 //        }
         
         VStack{
-            FilteredList(filterKey:"lastName",filterValue: lastNameFilter){ (singer: Singer) in
+            FilteredList(filterKey:"lastName",filterValue: lastNameFilter,predict:.beginsWith){ (singer: Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
             }
             

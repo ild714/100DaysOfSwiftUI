@@ -548,3 +548,10 @@ Ensuring Core Data objects are unique using constraints
 Filtering @FetchRequest using NSPredicate
 Dynamically filtering @FetchRequest with SwiftUI
 One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
+
+## Day59
+
+Core Data: Wrap up
+Review for Project 12: Core Data
+
+## Challenge5
