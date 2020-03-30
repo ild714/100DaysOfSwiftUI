@@ -1,5 +1,5 @@
 //
-//  PersonData+CoreDataClass.swift
+//  FriendData+CoreDataClass.swift
 //  ChallengeB
 //
 //  Created by Ильдар Нигметзянов on 30.03.2020.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(PersonData)
-public class PersonData: NSManagedObject {
+@objc(FriendData)
+public class FriendData: NSManagedObject {
 
 }

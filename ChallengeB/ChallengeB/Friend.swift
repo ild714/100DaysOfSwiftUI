@@ -9,6 +9,6 @@
 import Foundation
 
 struct Friend:Codable,Identifiable {
-    let id: UUID
+    let id: String
     let name: String
 }

@@ -1,5 +1,5 @@
 //
-//  PersonData+CoreDataClass.swift
+//  Tag+CoreDataClass.swift
 //  ChallengeB
 //
 //  Created by Ильдар Нигметзянов on 30.03.2020.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(PersonData)
-public class PersonData: NSManagedObject {
+@objc(Tag)
+public class Tag: NSManagedObject {
 
 }

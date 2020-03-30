@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A086192431ED5300525BA7 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A086182431ED5300525BA7 /* Detail.swift */; };
+		21A086802432375500525BA7 /* PersonData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0867A2432375400525BA7 /* PersonData+CoreDataClass.swift */; };
+		21A086812432375500525BA7 /* PersonData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0867B2432375400525BA7 /* PersonData+CoreDataProperties.swift */; };
+		21A086822432375500525BA7 /* FriendData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0867C2432375400525BA7 /* FriendData+CoreDataClass.swift */; };
+		21A086832432375500525BA7 /* FriendData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0867D2432375400525BA7 /* FriendData+CoreDataProperties.swift */; };
+		21A086842432375500525BA7 /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0867E2432375400525BA7 /* Tag+CoreDataClass.swift */; };
+		21A086852432375500525BA7 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0867F2432375400525BA7 /* Tag+CoreDataProperties.swift */; };
+		21A0868724324D5B00525BA7 /* DetailFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0868624324D5B00525BA7 /* DetailFriend.swift */; };
 		21B392E92430DA4300CDEB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B392E82430DA4300CDEB80 /* AppDelegate.swift */; };
 		21B392EB2430DA4300CDEB80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B392EA2430DA4300CDEB80 /* SceneDelegate.swift */; };
 		21B392EE2430DA4300CDEB80 /* ChallengeB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21B392EC2430DA4300CDEB80 /* ChallengeB.xcdatamodeld */; };
@@ -16,11 +24,17 @@
 		21B392F82430DA4300CDEB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B392F62430DA4300CDEB80 /* LaunchScreen.storyboard */; };
 		21B393042430DB9200CDEB80 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B393032430DB9200CDEB80 /* Person.swift */; };
 		21B393062430DBAF00CDEB80 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B393052430DBAF00CDEB80 /* Friend.swift */; };
-		21B393092430DED600CDEB80 /* PersonData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B393072430DED600CDEB80 /* PersonData+CoreDataClass.swift */; };
-		21B3930A2430DED600CDEB80 /* PersonData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B393082430DED600CDEB80 /* PersonData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21A086182431ED5300525BA7 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		21A0867A2432375400525BA7 /* PersonData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		21A0867B2432375400525BA7 /* PersonData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		21A0867C2432375400525BA7 /* FriendData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		21A0867D2432375400525BA7 /* FriendData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		21A0867E2432375400525BA7 /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		21A0867F2432375400525BA7 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		21A0868624324D5B00525BA7 /* DetailFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFriend.swift; sourceTree = "<group>"; };
 		21B392E52430DA4300CDEB80 /* ChallengeB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B392E82430DA4300CDEB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21B392EA2430DA4300CDEB80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +46,6 @@
 		21B392F92430DA4300CDEB80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B393032430DB9200CDEB80 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		21B393052430DBAF00CDEB80 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		21B393072430DED600CDEB80 /* PersonData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		21B393082430DED600CDEB80 /* PersonData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +78,19 @@
 		21B392E72430DA4300CDEB80 /* ChallengeB */ = {
 			isa = PBXGroup;
 			children = (
-				21B393072430DED600CDEB80 /* PersonData+CoreDataClass.swift */,
-				21B393082430DED600CDEB80 /* PersonData+CoreDataProperties.swift */,
+				21A0867A2432375400525BA7 /* PersonData+CoreDataClass.swift */,
+				21A0867B2432375400525BA7 /* PersonData+CoreDataProperties.swift */,
+				21A0867C2432375400525BA7 /* FriendData+CoreDataClass.swift */,
+				21A0867D2432375400525BA7 /* FriendData+CoreDataProperties.swift */,
+				21A0867E2432375400525BA7 /* Tag+CoreDataClass.swift */,
+				21A0867F2432375400525BA7 /* Tag+CoreDataProperties.swift */,
 				21B392E82430DA4300CDEB80 /* AppDelegate.swift */,
 				21B392EA2430DA4300CDEB80 /* SceneDelegate.swift */,
 				21B392EF2430DA4300CDEB80 /* ContentView.swift */,
 				21B393032430DB9200CDEB80 /* Person.swift */,
 				21B393052430DBAF00CDEB80 /* Friend.swift */,
+				21A086182431ED5300525BA7 /* Detail.swift */,
+				21A0868624324D5B00525BA7 /* DetailFriend.swift */,
 				21B392F12430DA4300CDEB80 /* Assets.xcassets */,
 				21B392F62430DA4300CDEB80 /* LaunchScreen.storyboard */,
 				21B392F92430DA4300CDEB80 /* Info.plist */,
@@ -161,13 +179,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B393092430DED600CDEB80 /* PersonData+CoreDataClass.swift in Sources */,
+				21A086852432375500525BA7 /* Tag+CoreDataProperties.swift in Sources */,
+				21A086812432375500525BA7 /* PersonData+CoreDataProperties.swift in Sources */,
+				21A086822432375500525BA7 /* FriendData+CoreDataClass.swift in Sources */,
 				21B392EE2430DA4300CDEB80 /* ChallengeB.xcdatamodeld in Sources */,
-				21B3930A2430DED600CDEB80 /* PersonData+CoreDataProperties.swift in Sources */,
+				21A086192431ED5300525BA7 /* Detail.swift in Sources */,
 				21B392E92430DA4300CDEB80 /* AppDelegate.swift in Sources */,
+				21A086832432375500525BA7 /* FriendData+CoreDataProperties.swift in Sources */,
 				21B393042430DB9200CDEB80 /* Person.swift in Sources */,
+				21A0868724324D5B00525BA7 /* DetailFriend.swift in Sources */,
 				21B392F02430DA4300CDEB80 /* ContentView.swift in Sources */,
 				21B392EB2430DA4300CDEB80 /* SceneDelegate.swift in Sources */,
+				21A086802432375500525BA7 /* PersonData+CoreDataClass.swift in Sources */,
+				21A086842432375500525BA7 /* Tag+CoreDataClass.swift in Sources */,
 				21B393062430DBAF00CDEB80 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

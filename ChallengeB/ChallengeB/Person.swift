@@ -9,7 +9,7 @@
 import Foundation
 
 struct Person: Codable,Identifiable {
-    let id: UUID
+    let id: String
     let isActive: Bool
     let name: String
     let age: Int16
