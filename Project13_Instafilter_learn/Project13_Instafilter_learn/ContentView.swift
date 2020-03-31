@@ -7,35 +7,59 @@
 //
 
 import SwiftUI
+import CoreImage
+import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
     
-    @State private var blurAmount: CGFloat = 0
+//    @State private var blurAmount: CGFloat = 0
+//
+//    @State private var showingActionSheet = false
+//    @State private var backgroundColor = Color.white
     
-    @State private var showingActionSheet = false
-    @State private var backgroundColor = Color.white
+    @State private var image: Image?
+    @State private var showingImagePicker = false
     
     var body: some View {
-        
-        Text("Hello")
-            .frame(width:300,height: 300)
-            .background(backgroundColor)
-                .onTapGesture{
-                    self.showingActionSheet = true
+        VStack{
+            image?
+                .resizable
+                .scaledToFit
+            Button("Select Image"){
+                self.showingImagePicker = true
             }
-        .actionSheet(isPresented: $showingActionSheet){
-            ActionSheet(title: Text("Change background"), message: Text("Select a new color"), buttons: [
-                .default(Text("Red")){
-                    self.backgroundColor = .red
-                },
-                .default(Text("Green")){
-                    self.backgroundColor = .green
-                },
-                .default(Text("Blue")){
-                    self.backgroundColor = .blue
-                }
-            ])
         }
+        .sheet(isPresented: $showingImagePicker){
+            ImagePicker()
+        }
+//    .sheet(i)
+//
+//        VStack{
+//            image?
+//            .resizable()
+//            .scaledToFit()
+//        }
+//    .onAppear(perform: loadImage)
+        
+//        Text("Hello")
+//            .frame(width:300,height: 300)
+//            .background(backgroundColor)
+//                .onTapGesture{
+//                    self.showingActionSheet = true
+//            }
+//        .actionSheet(isPresented: $showingActionSheet){
+//            ActionSheet(title: Text("Change background"), message: Text("Select a new color"), buttons: [
+//                .default(Text("Red")){
+//                    self.backgroundColor = .red
+//                },
+//                .default(Text("Green")){
+//                    self.backgroundColor = .green
+//                },
+//                .default(Text("Blue")){
+//                    self.backgroundColor = .blue
+//                }
+//            ])
+//        }
 //        let blur = Binding<CGFloat>(
 //            get:{
 //                self.blurAmount
@@ -53,6 +77,31 @@ struct ContentView: View {
 //                Slider(value: blur, in: 0...20)
 //        }
     }
+    
+//    func loadImage(){
+//        //image = Image("photo")
+//
+//        guard let inputImage = UIImage(named:"photo") else {return}
+//        let beginImage = CIImage(image: inputImage)
+//
+//        let context = CIContext()
+////        let currentFilter = CIFilter.crystallize()
+//        guard let currentFilter = CIFilter(name:"CITwirlDistortion") else {return}
+//
+////        currentFilter.inputImage = beginImage
+////        currentFilter.setValue(beginImage,forKey: kCIInputImageKey)
+////        currentFilter.radius = 100
+//        currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
+//        currentFilter.setValue(200, forKey: kCIInputRadiusKey)
+//        currentFilter.setValue(CIVector(x:inputImage.size.width/2,y:inputImage.size.height / 2), forKey: kCIInputCenterKey)
+//
+//        guard let outputImage = currentFilter.outputImage else {return}
+//
+//        if let cgimg = context.createCGImage(outputImage,from: outputImage.extent){
+//            let uiImage = UIImage(cgImage: cgimg)
+//            image = Image(uiImage: uiImage)
+//        }
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
