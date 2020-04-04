@@ -585,3 +585,8 @@ Basic image filtering using Core Image
 
 Customizing our filter using ActionSheet
 Saving the filtered image using UIImageWriteToSavedPhotosAlbum()
+
+## Day67
+
+Instafilter: Wrap up
+Review for Project 13: Instafilter
