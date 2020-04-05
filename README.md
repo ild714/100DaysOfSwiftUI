@@ -590,3 +590,10 @@ Saving the filtered image using UIImageWriteToSavedPhotosAlbum()
 
 Instafilter: Wrap up
 Review for Project 13: Instafilter
+
+## Day68
+
+Bucket List: Introduction
+Adding conformance to Comparable for custom types
+Writing data to the documents directory
+Switching view states with enums
