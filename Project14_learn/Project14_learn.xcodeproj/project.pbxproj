@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21AD8AC0243B1E0D00E89231 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD8ABF243B1E0D00E89231 /* MapView.swift */; };
 		21F1CEED243A5AC10079F79D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1CEEC243A5AC10079F79D /* AppDelegate.swift */; };
 		21F1CEEF243A5AC10079F79D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1CEEE243A5AC10079F79D /* SceneDelegate.swift */; };
 		21F1CEF1243A5AC10079F79D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1CEF0243A5AC10079F79D /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21AD8ABF243B1E0D00E89231 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21F1CEE9243A5AC10079F79D /* Project14_learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project14_learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F1CEEC243A5AC10079F79D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F1CEEE243A5AC10079F79D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				21F1CEEC243A5AC10079F79D /* AppDelegate.swift */,
 				21F1CEEE243A5AC10079F79D /* SceneDelegate.swift */,
 				21F1CEF0243A5AC10079F79D /* ContentView.swift */,
+				21AD8ABF243B1E0D00E89231 /* MapView.swift */,
 				21F1CEF2243A5AC40079F79D /* Assets.xcassets */,
 				21F1CEF7243A5AC40079F79D /* LaunchScreen.storyboard */,
 				21F1CEFA243A5AC40079F79D /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F1CEED243A5AC10079F79D /* AppDelegate.swift in Sources */,
+				21AD8AC0243B1E0D00E89231 /* MapView.swift in Sources */,
 				21F1CEEF243A5AC10079F79D /* SceneDelegate.swift in Sources */,
 				21F1CEF1243A5AC10079F79D /* ContentView.swift in Sources */,
 			);
