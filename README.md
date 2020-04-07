@@ -597,3 +597,14 @@ Bucket List: Introduction
 Adding conformance to Comparable for custom types
 Writing data to the documents directory
 Switching view states with enums
+
+## Day69
+
+Integrating MapKit with SwiftUI
+Communicating with a MapKit coordinator
+Using Touch ID and Face ID with SwiftUI
+
+## Day70
+
+Advanced MKMapView with SwiftUI
+Customizing MKMapView annotations
