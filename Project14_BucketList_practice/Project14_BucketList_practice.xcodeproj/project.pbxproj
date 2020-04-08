@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211C7562243DFDDC0028995C /* MKPointAnnotation-Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C7561243DFDDC0028995C /* MKPointAnnotation-Observable.swift */; };
+		211C7564243DFEE10028995C /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C7563243DFEE10028995C /* EditView.swift */; };
+		211C7566243E03290028995C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C7565243E03290028995C /* Result.swift */; };
 		21914483243CB3BC00203E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914482243CB3BC00203E39 /* AppDelegate.swift */; };
 		21914485243CB3BC00203E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914484243CB3BC00203E39 /* SceneDelegate.swift */; };
 		21914487243CB3BC00203E39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914486243CB3BC00203E39 /* ContentView.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		211C7561243DFDDC0028995C /* MKPointAnnotation-Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Observable.swift"; sourceTree = "<group>"; };
+		211C7563243DFEE10028995C /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		211C7565243E03290028995C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2191447F243CB3BC00203E39 /* Project14_BucketList_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project14_BucketList_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21914482243CB3BC00203E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21914484243CB3BC00203E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 				21914484243CB3BC00203E39 /* SceneDelegate.swift */,
 				21914486243CB3BC00203E39 /* ContentView.swift */,
 				21914496243CB42400203E39 /* MapView.swift */,
+				211C7561243DFDDC0028995C /* MKPointAnnotation-Observable.swift */,
+				211C7563243DFEE10028995C /* EditView.swift */,
+				211C7565243E03290028995C /* Result.swift */,
 				21914488243CB3BE00203E39 /* Assets.xcassets */,
 				2191448D243CB3BE00203E39 /* LaunchScreen.storyboard */,
 				21914490243CB3BE00203E39 /* Info.plist */,
@@ -149,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211C7562243DFDDC0028995C /* MKPointAnnotation-Observable.swift in Sources */,
 				21914483243CB3BC00203E39 /* AppDelegate.swift in Sources */,
+				211C7564243DFEE10028995C /* EditView.swift in Sources */,
 				21914497243CB42400203E39 /* MapView.swift in Sources */,
+				211C7566243E03290028995C /* Result.swift in Sources */,
 				21914485243CB3BC00203E39 /* SceneDelegate.swift in Sources */,
 				21914487243CB3BC00203E39 /* ContentView.swift in Sources */,
 			);

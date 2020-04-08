@@ -608,3 +608,9 @@ Using Touch ID and Face ID with SwiftUI
 
 Advanced MKMapView with SwiftUI
 Customizing MKMapView annotations
+
+## Day71 
+
+Extending existing types to support ObservableObject
+Downloading data from Wikipedia
+Sorting Wikipedia results
