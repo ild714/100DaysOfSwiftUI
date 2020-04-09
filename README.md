@@ -614,3 +614,8 @@ Customizing MKMapView annotations
 Extending existing types to support ObservableObject
 Downloading data from Wikipedia
 Sorting Wikipedia results
+
+## Day72
+
+Making someone else’s class conform to Codable
+Locking our UI behind Face ID
