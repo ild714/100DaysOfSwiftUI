@@ -619,3 +619,8 @@ Sorting Wikipedia results
 
 Making someone else’s class conform to Codable
 Locking our UI behind Face ID
+
+## Day73
+
+Bucket List: Wrap up
+Review for Project 14: Bucket List
