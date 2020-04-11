@@ -624,3 +624,10 @@ Locking our UI behind Face ID
 
 Bucket List: Wrap up
 Review for Project 14: Bucket List
+
+## Day74
+
+Accessibility: Introduction
+Identifying views with useful labels
+Hiding and grouping accessibility data
+Reading the value of controls
