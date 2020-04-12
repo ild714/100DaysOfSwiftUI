@@ -631,3 +631,9 @@ Accessibility: Introduction
 Identifying views with useful labels
 Hiding and grouping accessibility data
 Reading the value of controls
+
+## Day75
+
+Fixing Guess the Flag
+Fixing Word Scramble
+Fixing Bookworm

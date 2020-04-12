@@ -30,10 +30,13 @@ struct ContentView: View {
                 
                 Text("Amount of words: \(usedWords.count), amount of letters: \(sumLetters)")
                 
-                List(usedWords,id:\.self){
-                    Image(systemName:"\($0.count).circle")
-                    Text($0)
-                    
+                List(usedWords,id:\.self){ word in
+                    HStack{
+                        Image(systemName:"\(word.count).circle")
+                        Text(word)
+                    }
+                    .accessibilityElement(children: .ignore)
+                    .accessibility(label: Text("\(word), \(word.count) letters"))
                 }
             }
             .navigationBarItems(leading: Button("Restart"){
@@ -75,8 +78,6 @@ struct ContentView: View {
     }
     
     func startGame() {
-        usedWords.removeAll()
-        sumLetters = 0
         if let startWordsURL = Bundle.main.url(forResource:"start",withExtension: "txt"){
             if let startWords = try? String(contentsOf:startWordsURL){
                 let allWords = startWords.components(separatedBy:"\n")
