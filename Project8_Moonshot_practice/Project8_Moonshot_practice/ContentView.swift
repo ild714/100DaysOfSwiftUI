@@ -25,12 +25,13 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 44, height: 44)
+                        
                     if self.check {
                         VStack(alignment: .leading){
                             Text(mission.displayName)
                                 .font(.headline)
                             Text(mission.formattedLaunchDate)
-                            
+                            .accessibility(hint: Text("Here is the info about expedions, tap two times to open more info"))
                             
                         }
                      } else{

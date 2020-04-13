@@ -69,11 +69,11 @@ struct ContentView: View {
 //                        }
 //                    }
                     Picker(selection: $selected,label:Text("test")) {
-                        ForEach(0 ..< coffee.count){
-                            Text(self.coffee[$0])
+                        ForEach(0 ..< coffee.count){number in
+                            Text(self.coffee[number])
                         }
                     }.pickerStyle(SegmentedPickerStyle())
-                }
+                }.accessibility(label: Text("The current amount of coffe intake is, put your answer ander this title"))
             }
             
     

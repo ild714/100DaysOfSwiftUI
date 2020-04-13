@@ -637,3 +637,8 @@ Reading the value of controls
 Fixing Guess the Flag
 Fixing Word Scramble
 Fixing Bookworm
+
+## Day76
+
+Accessibility: Wrap up
+Review for Project 15: Accessibility

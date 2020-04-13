@@ -39,11 +39,14 @@ struct MissionView: View {
                     Image(self.mission.image)
                         .resizable()
                         .scaledToFit()
+                        //.accessibility(removeTraits: .isImage)
+                        .accessibility(hint: Text("Under this image there is info about expedition"))
                     .frame(maxWidth:geometry.size.width * 0.7)
                         .padding(.top)
                     Text(self.mission.formattedLaunchDate)
                     Text(self.mission.description)
                         .padding()
+                        .accessibility(hint: Text("Under this description,there is info about austronauts"))
                     ForEach(self.astronauts, id: \.role) { crewMember in
                         NavigationLink(destination: AstronautView(astronaut: crewMember.astronaut,mission:self.mission)){
                         HStack {
@@ -58,6 +61,8 @@ struct MissionView: View {
                                     .font(.headline)
                                 Text(crewMember.role)
                                     .foregroundColor(.secondary)
+                                .accessibility(hint: Text("Here is the info about crew member, tap two times to open more info"))
+                                                           
                             }
                             Spacer()
                         }
