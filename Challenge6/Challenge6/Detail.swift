@@ -9,16 +9,23 @@
 import SwiftUI
 
 struct Detail: View {
-    var person : Person
     
-    init(person:Person){
-        self.person = person
+    var id: Int
+    @ObservedObject var persons: Persons
+    
+    init(persons:Persons,id:Int){
+        self.id = id
+        self.persons = persons
     }
     
     var body: some View {
-        VStack{
-            Text(person.name)
-            Text(person.birthday)
+        Form{
+            Section(header: Text("Name")){
+                TextField("Fill name",text:$persons.persons[id].name)
+            }
+            Section(header: Text("Birthday")){
+                TextField("Fill birthday date",text:$persons.persons[id].birthday)
+            }
         }
     }
 }

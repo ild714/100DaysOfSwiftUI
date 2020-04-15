@@ -9,41 +9,19 @@
 import Foundation
 import SwiftUI
 
-enum CodingKeys: CodingKey {
-    case id,photo, name, birthday
-}
 
-struct Person: Codable,Identifiable {
-    @State var id = UUID()
-    @State var photo: UIImage?
-    @State var name: String = ""
-    @State var birthday: String = ""
+struct Person:Codable,Identifiable {
+    var id = UUID()
+    var name: String
+    var birthday: String
+    var dataImage: Data?
     
-    init(photo: UIImage,name:String,birthday:String){
-        self.photo = photo
+    init(name:String,birthday:String,dataImage:Data?){
         self.name = name
         self.birthday = birthday
+        self.dataImage = dataImage
     }
     
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try values.decode(UUID.self,forKey:.id)
-        let data = try values.decode(Data.self,forKey: .photo)
-        if let photo = UIImage(data: data){
-            self.photo = photo
-        }
-        self.name = try values.decode(String.self,forKey: .photo)
-        self.birthday = try values.decode(String.self,forKey: .birthday)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        let data = self.photo?.jpegData(compressionQuality: 0.8)
-        try container.encode(data,forKey: .photo)
-        try container.encode(name,forKey:.name)
-        try container.encode(birthday,forKey: .birthday)
-        try container.encode(id,forKey: .id)
-    }
 }
 
 
