@@ -649,4 +649,10 @@ Challenge6
 
 ## Day78
 
-Chakkenge6 continue
+Challenge6 continue
+
+## Day79
+
+Hot Prospects: Introduction
+Reading custom values from the environment with @EnvironmentObject
+Creating tabs with TabView and tabItem()

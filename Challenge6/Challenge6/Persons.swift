@@ -14,11 +14,15 @@ enum CodingKeys: CodingKey{
 }
 
 class Persons:ObservableObject,Codable{
+    
+    
     @Published var persons : [Person]
     
     init(){
         persons = [Person]()
     }
+    
+    
     
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -29,6 +33,5 @@ class Persons:ObservableObject,Codable{
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(persons,forKey:.person)
     }
-    
     
 }

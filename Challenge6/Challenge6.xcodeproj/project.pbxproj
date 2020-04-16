@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21212D4F24484029004B3F7D /* EditedPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21212D4E24484029004B3F7D /* EditedPerson.swift */; };
+		21212D512448941C004B3F7D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21212D502448941C004B3F7D /* MapView.swift */; };
 		217555EA24460E8100DDC3C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217555E924460E8100DDC3C0 /* AppDelegate.swift */; };
 		217555EC24460E8100DDC3C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217555EB24460E8100DDC3C0 /* SceneDelegate.swift */; };
 		217555EE24460E8100DDC3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217555ED24460E8100DDC3C0 /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21212D4E24484029004B3F7D /* EditedPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditedPerson.swift; sourceTree = "<group>"; };
+		21212D502448941C004B3F7D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		217555E624460E8100DDC3C0 /* Challenge6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217555E924460E8100DDC3C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		217555EB24460E8100DDC3C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				217555FF24460EE600DDC3C0 /* Person.swift */,
 				21755601244615FE00DDC3C0 /* PickerImage.swift */,
 				217556032446518B00DDC3C0 /* Detail.swift */,
+				21212D4E24484029004B3F7D /* EditedPerson.swift */,
+				21212D502448941C004B3F7D /* MapView.swift */,
 				217555EF24460E8500DDC3C0 /* Assets.xcassets */,
 				217555F424460E8500DDC3C0 /* LaunchScreen.storyboard */,
 				217555F724460E8500DDC3C0 /* Info.plist */,
@@ -161,9 +167,11 @@
 				2175560024460EE600DDC3C0 /* Person.swift in Sources */,
 				217556042446518B00DDC3C0 /* Detail.swift in Sources */,
 				217555EA24460E8100DDC3C0 /* AppDelegate.swift in Sources */,
+				21212D4F24484029004B3F7D /* EditedPerson.swift in Sources */,
 				217555EC24460E8100DDC3C0 /* SceneDelegate.swift in Sources */,
 				217555FE24460EC900DDC3C0 /* Persons.swift in Sources */,
 				217555EE24460E8100DDC3C0 /* ContentView.swift in Sources */,
+				21212D512448941C004B3F7D /* MapView.swift in Sources */,
 				21755602244615FE00DDC3C0 /* PickerImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Challenge6/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NR48U86L7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Challenge6/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Challenge6/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NR48U86L7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Challenge6/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

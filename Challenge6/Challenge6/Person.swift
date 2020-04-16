@@ -10,7 +10,11 @@ import Foundation
 import SwiftUI
 
 
-struct Person:Codable,Identifiable {
+struct Person:Codable,Identifiable,Comparable {
+    static func < (lhs: Person, rhs: Person) -> Bool {
+        lhs.name < rhs.name
+    }
+    
     var id = UUID()
     var name: String
     var birthday: String
