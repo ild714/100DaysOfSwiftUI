@@ -656,3 +656,9 @@ Challenge6 continue
 Hot Prospects: Introduction
 Reading custom values from the environment with @EnvironmentObject
 Creating tabs with TabView and tabItem()
+
+## Day80
+
+Understanding Swift’s Result type
+Manually publishing ObservableObject changes
+Controlling image interpolation in SwiftUI
