@@ -662,3 +662,9 @@ Creating tabs with TabView and tabItem()
 Understanding Swift’s Result type
 Manually publishing ObservableObject changes
 Controlling image interpolation in SwiftUI
+
+## Day81
+
+Creating context menus
+Scheduling local notifications
+Adding Swift package dependencies in Xcode

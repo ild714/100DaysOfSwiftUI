@@ -29,17 +29,45 @@ class DelayedUpdater: ObservableObject{
 
 struct ContentView: View {
         
-    @ObservedObject var updater = DelayedUpdater()
+    
+    
+//    @ObservedObject var updater = DelayedUpdater()
+//
+    @State private var backgroundColor = Color.red
     
     var body: some View {
-        Image("example")
-            .interpolation(.none)
-            .resizable()
-            .scaledToFit()
-            .frame(maxHeight: .infinity)
-            .background(Color.black)
-            .edgesIgnoringSafeArea(.all)
         
+        VStack{
+            Text("Hello,World!")
+                .padding()
+                .background(backgroundColor)
+            
+            Text("Cahnge Color")
+                .padding()
+                .contextMenu{
+                    Button(action: {
+                        self.backgroundColor = .red
+                    }){
+                        Text("red")
+                        Image(systemName: "checkmark.circle.fill")
+//                            .foregroundColor(.blue)
+                    }
+                    Button(action:{
+                        self.backgroundColor = .green
+                    }){
+                        Text("Green")
+                    }
+                    
+            }
+        }
+//        Image("example")
+//            .interpolation(.none)
+//            .resizable()
+//            .scaledToFit()
+//            .frame(maxHeight: .infinity)
+//            .background(Color.black)
+//            .edgesIgnoringSafeArea(.all)
+//
         //        Text("Value is: \(updater.value)")
         
         
