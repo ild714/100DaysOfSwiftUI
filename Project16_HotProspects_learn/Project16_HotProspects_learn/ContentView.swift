@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import UserNotifications
+import SamplePackage
 
 enum NetworkError: Error {
     case badURL, requestFailed, unknown
@@ -30,36 +32,66 @@ class DelayedUpdater: ObservableObject{
 struct ContentView: View {
         
     
-    
+    let possibleNumbers = Array(1...60)
+    var results: String {
+        let selected = possibleNumbers.random(7).sorted()
+        let strings = selected.map(String.init)
+        return strings.joined(separator: ", ")
+    }
 //    @ObservedObject var updater = DelayedUpdater()
 //
     @State private var backgroundColor = Color.red
     
     var body: some View {
+        Text(results)
         
-        VStack{
-            Text("Hello,World!")
-                .padding()
-                .background(backgroundColor)
-            
-            Text("Cahnge Color")
-                .padding()
-                .contextMenu{
-                    Button(action: {
-                        self.backgroundColor = .red
-                    }){
-                        Text("red")
-                        Image(systemName: "checkmark.circle.fill")
-//                            .foregroundColor(.blue)
-                    }
-                    Button(action:{
-                        self.backgroundColor = .green
-                    }){
-                        Text("Green")
-                    }
-                    
-            }
-        }
+//        VStack{
+//            Button("Request Permission"){
+//                UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound]) { (success, error) in
+//                    if success {
+//                        print("All set")
+//                    } else if let error = error {
+//                        print(error.localizedDescription)
+//                    }
+//                }
+//            }
+//
+//            Button("Schedule Notification"){
+//                let content = UNMutableNotificationContent()
+//                content.title = "Feed the cat"
+//                content.subtitle = "It looks hungry"
+//                content.sound = UNNotificationSound.default
+//
+//                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+//
+//                UNUserNotificationCenter.current().add(request)
+//            }
+//        }
+        
+//        VStack{
+//            Text("Hello,World!")
+//                .padding()
+//                .background(backgroundColor)
+//
+//            Text("Cahnge Color")
+//                .padding()
+//                .contextMenu{
+//                    Button(action: {
+//                        self.backgroundColor = .red
+//                    }){
+//                        Text("red")
+//                        Image(systemName: "checkmark.circle.fill")
+////                            .foregroundColor(.blue)
+//                    }
+//                    Button(action:{
+//                        self.backgroundColor = .green
+//                    }){
+//                        Text("Green")
+//                    }
+//
+//            }
+//        }
 //        Image("example")
 //            .interpolation(.none)
 //            .resizable()

@@ -668,3 +668,9 @@ Controlling image interpolation in SwiftUI
 Creating context menus
 Scheduling local notifications
 Adding Swift package dependencies in Xcode
+
+## Day82 
+
+Building our tab bar
+Sharing data across tabs using @EnvironmentObject
+Dynamically filtering a SwiftUI List
