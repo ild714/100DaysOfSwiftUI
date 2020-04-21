@@ -674,3 +674,14 @@ Adding Swift package dependencies in Xcode
 Building our tab bar
 Sharing data across tabs using @EnvironmentObject
 Dynamically filtering a SwiftUI List
+
+## Day83 
+
+Generating and scaling up a QR code
+Scanning QR codes with SwiftUI
+Adding options with a context menu
+
+## Day84
+
+Saving and loading data with UserDefaults
+Posting notifications to the lock screen

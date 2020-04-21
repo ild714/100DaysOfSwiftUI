@@ -16,7 +16,6 @@
 		2102BB8C244CCCC400F01DED /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102BB8B244CCCC400F01DED /* ProspectsView.swift */; };
 		2102BB8E244CCCD600F01DED /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102BB8D244CCCD600F01DED /* MeView.swift */; };
 		2102BB90244CD44700F01DED /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102BB8F244CD44700F01DED /* Prospect.swift */; };
-		2102BB92244CD51500F01DED /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102BB91244CD51500F01DED /* Prospects.swift */; };
 		21F704B0244E4139002A30B7 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 21F704AF244E4139002A30B7 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		2102BB8B244CCCC400F01DED /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		2102BB8D244CCCD600F01DED /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		2102BB8F244CD44700F01DED /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
-		2102BB91244CD51500F01DED /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 				2102BB8B244CCCC400F01DED /* ProspectsView.swift */,
 				2102BB8D244CCCD600F01DED /* MeView.swift */,
 				2102BB8F244CD44700F01DED /* Prospect.swift */,
-				2102BB91244CD51500F01DED /* Prospects.swift */,
 				2102BB7D244CC70C00F01DED /* Assets.xcassets */,
 				2102BB82244CC70C00F01DED /* LaunchScreen.storyboard */,
 				2102BB85244CC70C00F01DED /* Info.plist */,
@@ -166,7 +163,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2102BB92244CD51500F01DED /* Prospects.swift in Sources */,
 				2102BB8C244CCCC400F01DED /* ProspectsView.swift in Sources */,
 				2102BB90244CD44700F01DED /* Prospect.swift in Sources */,
 				2102BB78244CC70800F01DED /* AppDelegate.swift in Sources */,
