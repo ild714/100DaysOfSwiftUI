@@ -690,3 +690,10 @@ Posting notifications to the lock screen
 
 Hot Prospects: Wrap up
 Review for Project 16: Hot Prospects
+
+## Day86
+
+Flashzilla: Introduction
+How to use gestures in SwiftUI
+Making vibrations with UINotificationFeedbackGenerator and Core Haptics
+Disabling user interactivity with allowsHitTesting()
