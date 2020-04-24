@@ -697,3 +697,9 @@ Flashzilla: Introduction
 How to use gestures in SwiftUI
 Making vibrations with UINotificationFeedbackGenerator and Core Haptics
 Disabling user interactivity with allowsHitTesting()
+
+## Day87
+
+Triggering events repeatedly using a timer
+How to be notified when your SwiftUI app moves to the background
+Supporting specific accessibility needs with SwiftUI

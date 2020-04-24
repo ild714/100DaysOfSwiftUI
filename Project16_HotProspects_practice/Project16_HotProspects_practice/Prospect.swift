@@ -13,19 +13,38 @@ class Prospects: ObservableObject {
     static let saveKey = "SavedData"
     
     init(){
-        if let data = UserDefaults.standard.data(forKey: Self.saveKey){
-            if let decoded = try? JSONDecoder().decode([Prospect].self,from: data){
-                self.people = decoded
-                return
-            }
+//                if let data = UserDefaults.standard.data(forKey: Self.saveKey){
+        do{
+            let path = FileManager.default.urls(for: .documentDirectory,in:.userDomainMask)
+            let url = path[0].appendingPathComponent("message")
+            let data = try Data(contentsOf: url)
+                if let decoded = try? JSONDecoder().decode([Prospect].self,from: data){
+                    self.people = decoded
+                    return
+                }
+            
+        }catch {
+            print("error")
         }
         
         self.people = []
     }
     
+    func getDocumentDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory,in:.userDomainMask)
+        return paths[0]
+    }
+    
     private func save() {
         if let encoded = try? JSONEncoder().encode(people){
-            UserDefaults.standard.set(encoded,forKey: Self.saveKey)
+//            UseDefaults.standard.set(encoded,forKey: Self.saveKey)
+            let url = self.getDocumentDirectory().appendingPathComponent("message")
+            do {
+                try encoded.write(to: url)
+                
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
     
