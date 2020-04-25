@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var prospects = Prospects()
+    private(set) var prospects = Prospects()
+    
     
     var body: some View {
         TabView{
@@ -35,6 +36,7 @@ struct ContentView: View {
                     Text("Me")
             }
         }.environmentObject(prospects)
+       
     }
     
 }

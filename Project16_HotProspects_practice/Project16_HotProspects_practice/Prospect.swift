@@ -9,7 +9,7 @@
 import Foundation
 
 class Prospects: ObservableObject {
-    @Published private(set) var people: [Prospect]
+    @Published var people: [Prospect]
     static let saveKey = "SavedData"
     
     init(){
@@ -58,12 +58,22 @@ class Prospects: ObservableObject {
         people.append(prospect)
         save()
     }
+    
 }
 
 
-class Prospect: Identifiable, Codable{
+class Prospect: Identifiable, Codable,Comparable{
+    static func == (lhs: Prospect, rhs: Prospect) -> Bool {
+        lhs.name == rhs.name
+    }
+    
+    
     let id = UUID()
     var name = "Anonymous"
     var emailAddress = ""
     fileprivate(set) var isContacted = false
+    
+    static func < (lhs: Prospect, rhs: Prospect) -> Bool{
+        lhs.name < rhs.name
+    }
 }

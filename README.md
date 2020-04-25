@@ -703,3 +703,9 @@ Disabling user interactivity with allowsHitTesting()
 Triggering events repeatedly using a timer
 How to be notified when your SwiftUI app moves to the background
 Supporting specific accessibility needs with SwiftUI
+
+## Day88
+
+Designing a single card view
+Building a stack of cards
+Moving views with DragGesture and offset()
