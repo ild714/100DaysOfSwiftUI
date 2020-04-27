@@ -11,6 +11,7 @@ import SwiftUI
 struct CardView: View {
     let card: Card
     
+    @State private var feedback = UINotificationFeedbackGenerator()
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @State private var offset = CGSize.zero
     @State private var isShowingAnswer = false
@@ -36,6 +37,7 @@ struct CardView: View {
             .padding(20)
             .multilineTextAlignment(.center)
         }
+        .accessibility(addTraits: .isButton)
         .frame(width:450,height:250)
         .rotationEffect(.degrees(Double(offset.width / 5)))
         .offset(x: offset.width * 5,y:0)
@@ -43,10 +45,16 @@ struct CardView: View {
         .gesture(DragGesture()
         .onChanged{ (gesture) in
             self.offset = gesture.translation
+            self.feedback.prepare()
             }
         .onEnded{
             _ in
             if abs(self.offset.width) > 100{
+                if self.offset.width > 0 {
+                    self.feedback.notificationOccurred(.success)
+                } else {
+                    self.feedback.notificationOccurred(.error)
+                }
                 self.removal?()
             }else {
                 self.offset = .zero
