@@ -11,10 +11,12 @@ import SwiftUI
 struct CardView: View {
     let card: Card
     
+    @Environment(\.accessibilityEnabled) var accessibilityEnabled
     @State private var feedback = UINotificationFeedbackGenerator()
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @State private var offset = CGSize.zero
     @State private var isShowingAnswer = false
+    @State var arrayWrongAnswer = [Card]()
     var removal: (()->Void)? = nil
     var body: some View {
         ZStack{
@@ -25,6 +27,11 @@ struct CardView: View {
                     .fill(offset.width > 0 ? Color.green : Color.red))
                 .shadow(radius: 10)
             VStack{
+                if accessibilityEnabled{
+                    Text (isShowingAnswer ? card.answer : card.prompt)
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                }
                 Text(card.prompt)
                     .font(.largeTitle)
                     .foregroundColor(.black)
@@ -53,7 +60,9 @@ struct CardView: View {
                 if self.offset.width > 0 {
                     self.feedback.notificationOccurred(.success)
                 } else {
+                    
                     self.feedback.notificationOccurred(.error)
+                    self.arrayWrongAnswer.append(self.card)
                 }
                 self.removal?()
             }else {
@@ -64,6 +73,7 @@ struct CardView: View {
             .onTapGesture {
                 self.isShowingAnswer.toggle()
         }
+        .animation(.spring())
     }
     
 }

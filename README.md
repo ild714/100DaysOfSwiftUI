@@ -721,3 +721,8 @@ Ending the app with allowsHitTesting()
 Making iPhones vibrate with UINotificationFeedbackGenerator
 Fixing the bugs
 Adding and deleting cards
+
+## Day91
+
+Flashzilla: Wrap up
+Review for Project 17: Flashzilla

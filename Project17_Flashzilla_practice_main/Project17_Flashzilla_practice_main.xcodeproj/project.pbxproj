@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210BAFE6245783E100829838 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210BAFE5245783E100829838 /* EditCards.swift */; };
 		213A78612454DDA6001E0D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A78602454DDA6001E0D44 /* AppDelegate.swift */; };
 		213A78632454DDA6001E0D44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A78622454DDA6001E0D44 /* SceneDelegate.swift */; };
 		213A78652454DDA6001E0D44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A78642454DDA6001E0D44 /* ContentView.swift */; };
@@ -15,9 +16,11 @@
 		213A786D2454DDA8001E0D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213A786B2454DDA8001E0D44 /* LaunchScreen.storyboard */; };
 		213A78752454DDB9001E0D44 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A78742454DDB9001E0D44 /* Card.swift */; };
 		213A78772454DF73001E0D44 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A78762454DF73001E0D44 /* CardView.swift */; };
+		219547D42458C2E200345780 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219547D32458C2E200345780 /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210BAFE5245783E100829838 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		213A785D2454DDA6001E0D44 /* Project17_Flashzilla_practice_main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project17_Flashzilla_practice_main.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213A78602454DDA6001E0D44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		213A78622454DDA6001E0D44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		213A786E2454DDA8001E0D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		213A78742454DDB9001E0D44 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		213A78762454DF73001E0D44 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		219547D32458C2E200345780 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				213A78682454DDA8001E0D44 /* Preview Content */,
 				213A78742454DDB9001E0D44 /* Card.swift */,
 				213A78762454DF73001E0D44 /* CardView.swift */,
+				210BAFE5245783E100829838 /* EditCards.swift */,
+				219547D32458C2E200345780 /* Setting.swift */,
 			);
 			path = Project17_Flashzilla_practice_main;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				213A78612454DDA6001E0D44 /* AppDelegate.swift in Sources */,
 				213A78632454DDA6001E0D44 /* SceneDelegate.swift in Sources */,
 				213A78652454DDA6001E0D44 /* ContentView.swift in Sources */,
+				210BAFE6245783E100829838 /* EditCards.swift in Sources */,
+				219547D42458C2E200345780 /* Setting.swift in Sources */,
 				213A78752454DDB9001E0D44 /* Card.swift in Sources */,
 				213A78772454DF73001E0D44 /* CardView.swift in Sources */,
 			);
