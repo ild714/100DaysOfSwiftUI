@@ -726,3 +726,10 @@ Adding and deleting cards
 
 Flashzilla: Wrap up
 Review for Project 17: Flashzilla
+
+## Day92
+
+Layout and geometry: Introduction
+How layout works in SwiftUI
+Alignment and alignment guides
+How to create a custom alignment guide
