@@ -733,3 +733,9 @@ Layout and geometry: Introduction
 How layout works in SwiftUI
 Alignment and alignment guides
 How to create a custom alignment guide
+
+## Day93
+
+Absolute positioning for SwiftUI views
+Understanding frames and coordinates inside GeometryReader
+ScrollView effects using GeometryReader
