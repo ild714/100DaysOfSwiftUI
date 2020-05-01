@@ -33,15 +33,24 @@ struct MissionView: View {
     }
     
     var body: some View {
-        GeometryReader { geometry in
+        
+        GeometryReader { geo in
             ScrollView(.vertical){
                 VStack{
+                    
                     Image(self.mission.image)
                         .resizable()
                         .scaledToFit()
+//                        .frame(width: CGFloat(geometry.frame(in:.local)), height: T##CGFloat?, alignment: T##Alignment)
                         //.accessibility(removeTraits: .isImage)
                         .accessibility(hint: Text("Under this image there is info about expedition"))
-                    .frame(maxWidth:geometry.size.width * 0.7)
+                        .frame(maxHeight:geo.frame(in:.global).midY)
+                    .onTapGesture {
+                            print("Global center: \(geo.frame(in: .global).minX) x \(geo.frame(in: .global).minY)")
+                            print("Custom center: \(geo.frame(in: .named("Custom")).midX) x \(geo.frame(in: .named("Custom")).midY)")
+                            print("Local center: \(geo.frame(in: .local).midX) x \(geo.frame(in: .local).midY)")
+                            
+                    }
                         .padding(.top)
                     Text(self.mission.formattedLaunchDate)
                     Text(self.mission.description)

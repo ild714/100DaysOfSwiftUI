@@ -739,3 +739,8 @@ How to create a custom alignment guide
 Absolute positioning for SwiftUI views
 Understanding frames and coordinates inside GeometryReader
 ScrollView effects using GeometryReader
+
+## Day94
+
+Layout and geometry: Wrap up
+Review for Project 18: Layout and geometry

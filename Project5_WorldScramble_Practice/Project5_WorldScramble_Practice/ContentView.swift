@@ -19,7 +19,7 @@ struct ContentView: View {
     @State private var showingError = false
     
     @State private var sumLetters = 0
-    
+    let colors: [Color] = [.red,.green,.gray,.orange,.pink,.yellow,.purple]
     var body: some View {
         NavigationView{
             VStack {
@@ -30,10 +30,14 @@ struct ContentView: View {
                 
                 Text("Amount of words: \(usedWords.count), amount of letters: \(sumLetters)")
                 
-                List(usedWords,id:\.self){
-                    Image(systemName:"\($0.count).circle")
-                    Text($0)
-                    
+                List(usedWords,id:\.self){ word in
+                 
+                        Image(systemName:"\(word.count).circle")
+                            . background(Color.red)
+                        Text(word)
+                            .alignmentGuide(.leading){
+                                _ in CGFloat(word.count) * -10
+                        }
                 }
             }
             .navigationBarItems(leading: Button("Restart"){
