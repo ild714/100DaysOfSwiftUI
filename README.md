@@ -744,3 +744,7 @@ ScrollView effects using GeometryReader
 
 Layout and geometry: Wrap up
 Review for Project 18: Layout and geometry
+
+## Day95
+
+Challenge7
