@@ -748,3 +748,10 @@ Review for Project 18: Layout and geometry
 ## Day95
 
 Challenge7
+
+## Day96
+
+SnowSeeker: Introduction
+Working with two side by side views in SwiftUI
+Using alert() and sheet() with optionals
+Using groups as transparent layout containers
