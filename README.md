@@ -755,3 +755,9 @@ SnowSeeker: Introduction
 Working with two side by side views in SwiftUI
 Using alert() and sheet() with optionals
 Using groups as transparent layout containers
+
+## Day97
+
+Building a primary list of items
+Making NavigationView work in landscape
+Creating a secondary view for NavigationView

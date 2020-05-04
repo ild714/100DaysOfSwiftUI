@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		210B178D2460343E00CF8A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B178C2460343E00CF8A90 /* AppDelegate.swift */; };
+		210B178F2460343E00CF8A90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B178E2460343E00CF8A90 /* SceneDelegate.swift */; };
+		210B17912460343E00CF8A90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17902460343E00CF8A90 /* ContentView.swift */; };
+		210B17932460344200CF8A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210B17922460344200CF8A90 /* Assets.xcassets */; };
+		210B17962460344200CF8A90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210B17952460344200CF8A90 /* Preview Assets.xcassets */; };
+		210B17992460344200CF8A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210B17972460344200CF8A90 /* LaunchScreen.storyboard */; };
+		210B17A1246034B900CF8A90 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 210B17A0246034B900CF8A90 /* resorts.json */; };
+		210B17A32460353F00CF8A90 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17A22460353F00CF8A90 /* Resort.swift */; };
+		210B17A5246036E400CF8A90 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17A4246036E400CF8A90 /* Bundle-Decodable.swift */; };
+		210B17A724603D9800CF8A90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17A624603D9800CF8A90 /* WelcomeView.swift */; };
+		210B17A92460413E00CF8A90 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17A82460413E00CF8A90 /* ResortView.swift */; };
+		210B17AB2460560B00CF8A90 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17AA2460560B00CF8A90 /* SkiDetailsView.swift */; };
+		210B17AD2460568D00CF8A90 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B17AC2460568D00CF8A90 /* ResortDetailsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		210B17892460343E00CF8A90 /* Project19_Ski_resorts_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project19_Ski_resorts_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210B178C2460343E00CF8A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		210B178E2460343E00CF8A90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		210B17902460343E00CF8A90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		210B17922460344200CF8A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		210B17952460344200CF8A90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		210B17982460344200CF8A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		210B179A2460344200CF8A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		210B17A0246034B900CF8A90 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = resorts.json; path = "../../../Desktop/HackingWithSwift-master/SwiftUI/project19-files/resorts.json"; sourceTree = "<group>"; };
+		210B17A22460353F00CF8A90 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		210B17A4246036E400CF8A90 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		210B17A624603D9800CF8A90 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		210B17A82460413E00CF8A90 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
+		210B17AA2460560B00CF8A90 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
+		210B17AC2460568D00CF8A90 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		210B17862460343E00CF8A90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		210B17802460343E00CF8A90 = {
+			isa = PBXGroup;
+			children = (
+				210B178B2460343E00CF8A90 /* Project19_Ski_resorts_practice */,
+			);
+			sourceTree = "<group>";
+		};
+		210B178A2460343E00CF8A90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				210B17892460343E00CF8A90 /* Project19_Ski_resorts_practice.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		210B178B2460343E00CF8A90 /* Project19_Ski_resorts_practice */ = {
+			isa = PBXGroup;
+			children = (
+				210B178C2460343E00CF8A90 /* AppDelegate.swift */,
+				210B178E2460343E00CF8A90 /* SceneDelegate.swift */,
+				210B17902460343E00CF8A90 /* ContentView.swift */,
+				210B17A22460353F00CF8A90 /* Resort.swift */,
+				210B17A4246036E400CF8A90 /* Bundle-Decodable.swift */,
+				210B17A624603D9800CF8A90 /* WelcomeView.swift */,
+				210B17A82460413E00CF8A90 /* ResortView.swift */,
+				210B17AA2460560B00CF8A90 /* SkiDetailsView.swift */,
+				210B17AC2460568D00CF8A90 /* ResortDetailsView.swift */,
+				210B178A2460343E00CF8A90 /* Products */,
+				210B17A0246034B900CF8A90 /* resorts.json */,
+				210B17922460344200CF8A90 /* Assets.xcassets */,
+				210B17972460344200CF8A90 /* LaunchScreen.storyboard */,
+				210B179A2460344200CF8A90 /* Info.plist */,
+				210B17942460344200CF8A90 /* Preview Content */,
+			);
+			path = Project19_Ski_resorts_practice;
+			sourceTree = "<group>";
+		};
+		210B17942460344200CF8A90 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				210B17952460344200CF8A90 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		210B17882460343E00CF8A90 /* Project19_Ski_resorts_practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 210B179D2460344200CF8A90 /* Build configuration list for PBXNativeTarget "Project19_Ski_resorts_practice" */;
+			buildPhases = (
+				210B17852460343E00CF8A90 /* Sources */,
+				210B17862460343E00CF8A90 /* Frameworks */,
+				210B17872460343E00CF8A90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Project19_Ski_resorts_practice;
+			productName = Project19_Ski_resorts_practice;
+			productReference = 210B17892460343E00CF8A90 /* Project19_Ski_resorts_practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		210B17812460343E00CF8A90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ильдар Нигметзянов";
+				TargetAttributes = {
+					210B17882460343E00CF8A90 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 210B17842460343E00CF8A90 /* Build configuration list for PBXProject "Project19_Ski_resorts_practice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 210B17802460343E00CF8A90;
+			productRefGroup = 210B178A2460343E00CF8A90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				210B17882460343E00CF8A90 /* Project19_Ski_resorts_practice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		210B17872460343E00CF8A90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210B17992460344200CF8A90 /* LaunchScreen.storyboard in Resources */,
+				210B17962460344200CF8A90 /* Preview Assets.xcassets in Resources */,
+				210B17A1246034B900CF8A90 /* resorts.json in Resources */,
+				210B17932460344200CF8A90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		210B17852460343E00CF8A90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210B178D2460343E00CF8A90 /* AppDelegate.swift in Sources */,
+				210B17A724603D9800CF8A90 /* WelcomeView.swift in Sources */,
+				210B178F2460343E00CF8A90 /* SceneDelegate.swift in Sources */,
+				210B17A92460413E00CF8A90 /* ResortView.swift in Sources */,
+				210B17A5246036E400CF8A90 /* Bundle-Decodable.swift in Sources */,
+				210B17A32460353F00CF8A90 /* Resort.swift in Sources */,
+				210B17AD2460568D00CF8A90 /* ResortDetailsView.swift in Sources */,
+				210B17912460343E00CF8A90 /* ContentView.swift in Sources */,
+				210B17AB2460560B00CF8A90 /* SkiDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		210B17972460344200CF8A90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				210B17982460344200CF8A90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		210B179B2460344200CF8A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		210B179C2460344200CF8A90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		210B179E2460344200CF8A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Project19_Ski_resorts_practice/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Project19_Ski_resorts_practice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Project19-Ski-resorts-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		210B179F2460344200CF8A90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Project19_Ski_resorts_practice/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Project19_Ski_resorts_practice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Project19-Ski-resorts-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		210B17842460343E00CF8A90 /* Build configuration list for PBXProject "Project19_Ski_resorts_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210B179B2460344200CF8A90 /* Debug */,
+				210B179C2460344200CF8A90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		210B179D2460344200CF8A90 /* Build configuration list for PBXNativeTarget "Project19_Ski_resorts_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210B179E2460344200CF8A90 /* Debug */,
+				210B179F2460344200CF8A90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 210B17812460343E00CF8A90 /* Project object */;
+}
