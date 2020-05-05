@@ -761,3 +761,9 @@ Using groups as transparent layout containers
 Building a primary list of items
 Making NavigationView work in landscape
 Creating a secondary view for NavigationView
+
+## Day98
+
+Changing a view’s layout in response to size classes
+Binding an alert to an optional string
+Letting the user mark favorites

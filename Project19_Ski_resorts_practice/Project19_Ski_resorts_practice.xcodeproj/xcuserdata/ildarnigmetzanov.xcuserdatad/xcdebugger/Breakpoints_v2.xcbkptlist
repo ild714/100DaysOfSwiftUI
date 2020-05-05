@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B360796B-7DF4-4C69-A04C-6F6B178B76C2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26C25E2E-CF60-4117-BC03-01D3B27EA271"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project19_Ski_resorts_practice/Favorites.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "26C25E2E-CF60-4117-BC03-01D3B27EA271 - 1dae3dae44cb4e74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project19_Ski_resorts_practice.Favorites.__allocating_init() -&gt; Project19_Ski_resorts_practice.Favorites"
+                  moduleName = "Project19_Ski_resorts_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ildarnigmetzanov/100DaysOfSwiftUI/Project19_Ski_resorts_practice/Project19_Ski_resorts_practice/Favorites.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "26C25E2E-CF60-4117-BC03-01D3B27EA271 - 56aa8d2521f7ee29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project19_Ski_resorts_practice.Favorites.init() -&gt; Project19_Ski_resorts_practice.Favorites"
+                  moduleName = "Project19_Ski_resorts_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ildarnigmetzanov/100DaysOfSwiftUI/Project19_Ski_resorts_practice/Project19_Ski_resorts_practice/Favorites.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69A356AF-823A-4E75-9137-2FBBCB49C6D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project19_Ski_resorts_practice/Favorites.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "save()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
