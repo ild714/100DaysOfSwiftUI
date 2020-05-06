@@ -10,6 +10,7 @@ import Foundation
 
 struct Resort: Codable, Identifiable{
     
+    
    var facilityTypes: [Facility] {
        facilities.map(Facility.init)
    }

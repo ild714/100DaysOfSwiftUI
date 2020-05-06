@@ -8,10 +8,17 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     
     @ObservedObject var favorities = Favorites()
-    let resorts: [Resort] = Bundle.main.decode("resorts.json")
+    @State var resorts: [Resort] = Bundle.main.decode("resorts.json")
+    var copyOfResorts : [Resort] = Bundle.main.decode("resorts.json")
+    @State private var isSorted = false
+    @State private var isFiltered = false
+    @State var sizeType = Size.large
+    @State var price = Price.oneDollad
     
     var body: some View {
         NavigationView{
@@ -38,19 +45,113 @@ struct ContentView: View {
                     }
                 }
             }
+            .sheet(isPresented:$isFiltered,onDismiss: updateUI){
+                FilterView(sizeType: self.$sizeType,price: self.$price)
+            }
+        
             .navigationBarTitle("Resorts")
+            .navigationBarItems(leading: Button(action: {
+                self.isSorted.toggle()
+            }){
+                Text("Sort")
+                },trailing:Button(action: {
+                    self.isFiltered.toggle()
+                }){
+                    Text("Filter")
+            })
+                .actionSheet(isPresented: $isSorted){
+                    ActionSheet(title: Text("Choose type of sorting"), message: nil, buttons: [.cancel(),.default(Text("Sort by country"), action: sortByCountry),.default(Text("Sort by alphabet"),action: sortByAlphabet),.default(Text("Sort by default"),action: sortByDefault)])
+            }
             WelcomeView()
         }
     .environmentObject(favorities)
     .phoneOnlyStackNavigation()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    func sortByCountry() {
+        self.resorts.sort{
+            $0.country < $1.country
+        }
+    }
+    
+    func sortByAlphabet(){
+        self.resorts.sort{
+            $0.name < $1.name
+        }
+    }
+    
+    func sortByDefault(){
+        self.resorts = self.copyOfResorts
+    }
+    
+    func updateUI(){
+        self.resorts = Bundle.main.decode("resorts.json")
+        var resortFiltered : [Resort] = [Resort]()
+        if sizeType == .small && price == .oneDollad{
+            for resort in self.resorts{
+                if resort.size == 1 && resort.price == 1{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else if sizeType == .small && price == .twoDollars{
+            for resort in self.resorts{
+                if resort.size == 1 && resort.price == 2{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else if sizeType == .small && price == .threeDollars{
+            for resort in self.resorts{
+                if resort.size == 1 && resort.price == 3{
+                    resortFiltered.append(resort)
+                }
+            }
+        }
+        else if sizeType == .average && price == .oneDollad{
+            for resort in self.resorts{
+                if resort.size == 1 && resort.price == 1{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else if sizeType == .average && price == .twoDollars{
+            for resort in self.resorts{
+                if resort.size == 2 && resort.price == 2{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else if sizeType == .average && price == .threeDollars{
+            for resort in self.resorts{
+                if resort.size == 2 && resort.price == 3{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else if sizeType == .large && price == .oneDollad{
+            for resort in self.resorts{
+                if resort.size == 2 && resort.price == 1{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else if sizeType == .large && price == .twoDollars{
+            for resort in self.resorts{
+                if resort.size == 3 && resort.price == 2{
+                    resortFiltered.append(resort)
+                }
+            }
+        } else {
+            for resort in self.resorts{
+                if resort.size == 3 && resort.price == 3{
+                    resortFiltered.append(resort)
+                }
+            }
+        }
+        self.resorts = resortFiltered
     }
 }
+
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
 
 extension View {
     func phoneOnlyStackNavigation() -> some View {

@@ -14,30 +14,32 @@ struct ResortView: View {
     @Environment(\.horizontalSizeClass) var sizeClass
     @State private var selectedFacility: Facility?
     var body: some View {
+        GeometryReader{geo in
         ScrollView{
             VStack(alignment:.leading,spacing: 0){
-                Image(decorative: resort.id)
+                Image(decorative: self.resort.id)
                     .resizable()
                     .scaledToFit()
-                
+                    .frame(width: geo.size.width)
+                    
                 Group{
                     HStack{
-                        if sizeClass == .compact{
+                        if self.sizeClass == .compact{
                             Spacer()
-                            ResortDetailsView(resort: resort)
-                            SkiDetailsView(resort: resort)
+                            ResortDetailsView(resort: self.resort)
+                            SkiDetailsView(resort: self.resort)
                             Spacer()
                         } else {
-                            ResortDetailsView(resort: resort)
+                            ResortDetailsView(resort: self.resort)
                             Spacer().frame(height:0)
-                            SkiDetailsView(resort: resort)
+                            SkiDetailsView(resort: self.resort)
                         }
                     }
                     .font(.headline)
                     .foregroundColor(.secondary)
                     .padding(.top)
                     
-                    Text(resort.description)
+                    Text(self.resort.description)
                         .padding(.vertical)
                     
                     Text("Facilities")
@@ -45,7 +47,7 @@ struct ResortView: View {
                     
                     
                     HStack {
-                        ForEach(resort.facilityTypes) { facility in
+                        ForEach(self.resort.facilityTypes) { facility in
                             facility.icon
                                 .font(.title)
                                 .onTapGesture {
@@ -57,7 +59,7 @@ struct ResortView: View {
                 }
                 .padding(.horizontal)
             }
-            Button(favorities.contains(resort) ? "Remove from Favorities": "Add to Favorites"){
+            Button(self.favorities.contains(self.resort) ? "Remove from Favorities": "Add to Favorites"){
                 if self.favorities.contains(self.resort){
                     self.favorities.remove(self.resort)
                 }else {
@@ -66,6 +68,7 @@ struct ResortView: View {
             }
         }
         .padding()
+        }
         .alert(item: $selectedFacility){facility in
             facility.alert
         }

@@ -767,3 +767,8 @@ Creating a secondary view for NavigationView
 Changing a view’s layout in response to size classes
 Binding an alert to an optional string
 Letting the user mark favorites
+
+## Day99
+
+SnowSeeker: Wrap up
+Review for Project 19: SnowSeeker
